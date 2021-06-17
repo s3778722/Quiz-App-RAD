@@ -1,6 +1,11 @@
-<h1>You answered <%= session[:marks]%>/<%= session[:max] %> questions correctly<h1>
+
+<h1 class="text-center">This time, you answered <%= session[:marks]%>/<%= session[:max] %> questions correctly</h1>
 <% session[:marks] = 0 %>
 <% session[:times] = 0 %>
+<% session[:history][0..4].each do |i| %>
+  <h5 class="text-center"><%=i%></h5>
+<% end %>
+
 
 <div class="row">
     <div class="col text-center">

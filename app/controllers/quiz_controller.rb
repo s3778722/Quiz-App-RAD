@@ -39,15 +39,45 @@ class QuizController < ApplicationController
   end  
 
   def result
+    d = DateTime.now.in_time_zone('Melbourne')
+    #need one more space for the latest result
+    if session[:history].count >= 6
+      session[:history].shift()
+    end
+    if session[:history].nil? 
+      session[:history] ||= [] 
+      session[:history] << "At #{d.strftime("%H:%M")}, #{d.strftime("%d/%m/%Y")}, you answered #{session[:marks]}/#{session[:max]} questions correctly"
+    else session[:history]
+      session[:history] << "At #{d.strftime("%H:%M")}, #{d.strftime("%d/%m/%Y")}, you answered #{session[:marks]}/#{session[:max]} questions correctly"
+    end
   end  
 
   def reload
-    url = 'https://quizapi.io/api/v1/questions?apiKey=A9ya16s39eH0hdu3BgxigMuxVa4zbjMaVjHxCOyt&limit=10'
-    uri = URI(url)
-    response = Net::HTTP.get(uri)
-    result = JSON.parse(response)
-    File.write('./quiz.json', JSON.pretty_generate(result))
+    if session[:combination] == 1
+      url = 'https://quizapi.io/api/v1/questions?apiKey=A9ya16s39eH0hdu3BgxigMuxVa4zbjMaVjHxCOyt&limit=20&category=docker'
+      uri = URI(url)
+      response = Net::HTTP.get(uri)
+      result = JSON.parse(response)
+      File.write('./quiz.json', JSON.pretty_generate(result))
+    elsif session['combination'] == 2
+      url = 'https://quizapi.io/api/v1/questions?apiKey=A9ya16s39eH0hdu3BgxigMuxVa4zbjMaVjHxCOyt&limit=20&category=devops'
+      uri = URI(url)
+      response = Net::HTTP.get(uri)
+      result = JSON.parse(response)
+      File.write('./quiz.json', JSON.pretty_generate(result))
+    elsif session['combination'] == 3
+      url = 'https://quizapi.io/api/v1/questions?apiKey=A9ya16s39eH0hdu3BgxigMuxVa4zbjMaVjHxCOyt&limit=20&category=linux'
+      uri = URI(url)
+      response = Net::HTTP.get(uri)
+      result = JSON.parse(response)
+      File.write('./quiz.json', JSON.pretty_generate(result))
+    elsif session['combination'] == 4
+      url = 'https://quizapi.io/api/v1/questions?apiKey=A9ya16s39eH0hdu3BgxigMuxVa4zbjMaVjHxCOyt&limit=20&category=sql'
+      uri = URI(url)
+      response = Net::HTTP.get(uri)
+      result = JSON.parse(response)
+      File.write('./quiz.json', JSON.pretty_generate(result))
+    end
     redirect_to(quiz_get_path)
-
   end
 end

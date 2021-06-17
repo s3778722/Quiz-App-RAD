@@ -1,3 +1,15 @@
+<script type="text/javascript">
+$(document).ready(function(){
+    $("form").submit(function(){
+		if ($('input:checkbox').filter(':checked').length < 1){
+        alert("Check at least one category!");
+		return false;
+		}
+    });
+});
+</script>
+
+
 <br>
 <div class="row">
     <div class="col text-center">
@@ -8,13 +20,20 @@
 <%= form_with url: "/set", method: :post do |form| %>
 <div class="row">
     <div class="col text-center">
+        <h5>Number of Questions<h5>
         <input type="number" name="max" min="4" max="8" value ="4">
     </div>
 </div>
 <br>
+<div class="col text-center">
+    <input name="docker" type="checkbox" value="Box 1"><label>Docker</label>
+    <input name="devops" type="checkbox" value="Box 2"><label>DevOps</label>
+    <input name="linux" type="checkbox" value="Box 3"><label>Linux</label>
+    <input name="sql" type="checkbox" value="Box 4"><label>SQL</label>
+<br>
 <div class="row">
     <div class="col text-center">
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-primary" id="checkBtn">Submit</button>
     </div>
 </div>
 <%end %>

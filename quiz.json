@@ -1,13 +1,77 @@
 [
   {
-    "id": 388,
-    "question": "Which is the log in which data changes received from a replication master server are written?",
+    "id": 371,
+    "question": "Null is used as a place holder for optional fields",
     "description": null,
     "answers": {
-      "answer_a": "Error Log",
-      "answer_b": "Relay Log",
-      "answer_c": "General Query Log",
-      "answer_d": "Binary Log",
+      "answer_a": "True",
+      "answer_b": "False",
+      "answer_c": null,
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "MySQL"
+      }
+    ],
+    "category": "SQL",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 400,
+    "question": "One of the early proponents of a Relational Database who laid down many of the principles we use to this day was:",
+    "description": null,
+    "answers": {
+      "answer_a": "Xigang Koi",
+      "answer_b": "Mahatma Coate",
+      "answer_c": "William Crawford",
+      "answer_d": "Edgar Codd",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "true",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "MySQL"
+      }
+    ],
+    "category": "SQL",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 441,
+    "question": "A table that displays data redundancies yields ________ anomalies",
+    "description": null,
+    "answers": {
+      "answer_a": "Insertion",
+      "answer_b": "All of options",
+      "answer_c": "Update",
+      "answer_d": "Deletion",
       "answer_e": null,
       "answer_f": null
     },
@@ -29,50 +93,18 @@
       }
     ],
     "category": "SQL",
-    "difficulty": "Medium"
+    "difficulty": "Hard"
   },
   {
-    "id": 788,
-    "question": "How can we destroy a PHP session:",
+    "id": 338,
+    "question": "What is the maximum size of a row in a MyISAM table?",
     "description": null,
     "answers": {
-      "answer_a": "session_destroy()",
-      "answer_b": "destroy_session()",
-      "answer_c": "session()",
-      "answer_d": "startD()",
-      "answer_e": "sessionDestroy()",
-      "answer_f": "destroySession()"
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": null,
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "PHP"
-      }
-    ],
-    "category": "Code",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 814,
-    "question": "How to remove unused data (all unused containers, networks, images (both dangling and unreferenced), and optionally, volumes) in Docker.,",
-    "description": null,
-    "answers": {
-      "answer_a": "docker system --prune",
-      "answer_b": "docker system prune sys",
-      "answer_c": "docker system prune",
-      "answer_d": null,
-      "answer_e": null,
+      "answer_a": "No limit",
+      "answer_b": "OS specific",
+      "answer_c": "65534",
+      "answer_d": "128",
+      "answer_e": "2’147’483’648",
       "answer_f": null
     },
     "multiple_correct_answers": "false",
@@ -89,79 +121,15 @@
     "tip": null,
     "tags": [
       {
-        "name": "Docker"
+        "name": "MySQL"
       }
     ],
-    "category": "Docker",
-    "difficulty": "Medium"
+    "category": "SQL",
+    "difficulty": "Hard"
   },
   {
-    "id": 127,
-    "question": "What is the correct HTML for adding a background color?",
-    "description": null,
-    "answers": {
-      "answer_a": "<body bg=\"yellow\">",
-      "answer_b": "<background>yellow</background>",
-      "answer_c": "<body style=\"background-color:yellow;\">",
-      "answer_d": "<body style bg=\"yellow\">",
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "false",
-      "answer_c_correct": "true",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_c",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "HTML"
-      }
-    ],
-    "category": "",
-    "difficulty": "Easy"
-  },
-  {
-    "id": 1033,
-    "question": "How to scale a service to 7 replicas in Docker Swarm?",
-    "description": null,
-    "answers": {
-      "answer_a": "docker service scale name_of_your_service_here=7",
-      "answer_b": "docker service replica-set name_of_your_service_here=7",
-      "answer_c": "docker service update name_of_your_service_here=7",
-      "answer_d": "docker service upgrade name_of_your_service_here=7",
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "Docker"
-      }
-    ],
-    "category": "Docker",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 891,
-    "question": "Is it possible to build environment-agnostic systems with Docker?",
+    "id": 365,
+    "question": "The ASC and DESC keywords can be used in the same statement",
     "description": null,
     "answers": {
       "answer_a": "True",
@@ -180,35 +148,67 @@
       "answer_e_correct": "false",
       "answer_f_correct": "false"
     },
-    "correct_answer": null,
+    "correct_answer": "answer_a",
     "explanation": null,
     "tip": null,
     "tags": [
       {
-        "name": "Docker"
+        "name": "MySQL"
       }
     ],
-    "category": "Docker",
+    "category": "SQL",
     "difficulty": "Easy"
   },
   {
-    "id": 396,
-    "question": "What kind of replication is supported by the MySQL Server?",
+    "id": 372,
+    "question": "What will be the output of the SELECT CASE WHEN NULL = NULL THEN 'YES' ELSE 'NO' END",
     "description": null,
     "answers": {
-      "answer_a": "Multiple-master Replication",
-      "answer_b": "MySQL Doesn't Support Replication",
-      "answer_c": "Master To Slave Replication",
-      "answer_d": "Single File Based Clustering",
-      "answer_e": "Master to Master Replication",
+      "answer_a": "True",
+      "answer_b": "False",
+      "answer_c": "An Error will be generated",
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "MySQL"
+      }
+    ],
+    "category": "SQL",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 240,
+    "question": "Please select Spatial data types:",
+    "description": null,
+    "answers": {
+      "answer_a": "GEOMETRY",
+      "answer_b": "CIRCLE",
+      "answer_c": "SQUARE",
+      "answer_d": "POINT",
+      "answer_e": "POLYGON",
       "answer_f": null
     },
     "multiple_correct_answers": "true",
     "correct_answers": {
-      "answer_a_correct": "false",
+      "answer_a_correct": "true",
       "answer_b_correct": "false",
-      "answer_c_correct": "true",
-      "answer_d_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "true",
       "answer_e_correct": "true",
       "answer_f_correct": "false"
     },
@@ -221,16 +221,48 @@
       }
     ],
     "category": "SQL",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 332,
+    "question": "What will happen if some of the columns in a table are of char datatype and others are of varchar datatype?",
+    "description": null,
+    "answers": {
+      "answer_a": "Nothing will happen",
+      "answer_b": "MySQL will generate an error",
+      "answer_c": "MySQL will convert all varchar datatypes into char",
+      "answer_d": "MySQL will convert all char datatypes into varchar",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "MySQL"
+      }
+    ],
+    "category": "SQL",
     "difficulty": "Medium"
   },
   {
-    "id": 879,
-    "question": "What is the reason for using Volumes in Docker?",
+    "id": 353,
+    "question": "A one to many relationship can only contain multiple entries of both primary and foreign keys.",
     "description": null,
     "answers": {
-      "answer_a": "To create exceptions to the `--read-only` mode.",
-      "answer_b": "To add plugins for extended file attributes.",
-      "answer_c": "To fail access to persisted data such as data in a database.",
+      "answer_a": "True",
+      "answer_b": "False",
+      "answer_c": null,
       "answer_d": null,
       "answer_e": null,
       "answer_f": null
@@ -249,21 +281,21 @@
     "tip": null,
     "tags": [
       {
-        "name": "Docker"
+        "name": "MySQL"
       }
     ],
-    "category": "Docker",
-    "difficulty": "Easy"
+    "category": "SQL",
+    "difficulty": "Medium"
   },
   {
-    "id": 364,
-    "question": "The clause ORDER is used to sort records in either ascending or descending order.",
+    "id": 424,
+    "question": "DCL is used for _______?",
     "description": null,
     "answers": {
-      "answer_a": "True",
-      "answer_b": "False",
-      "answer_c": null,
-      "answer_d": null,
+      "answer_a": "Managing the changes made by DML statements",
+      "answer_b": "Inserting, Deleting and Updating data",
+      "answer_c": "Control access to data stored in a database",
+      "answer_d": "None of the above",
       "answer_e": null,
       "answer_f": null
     },
@@ -288,13 +320,301 @@
     "difficulty": "Medium"
   },
   {
-    "id": 622,
-    "question": "How can we determine the number of rows returned in the result set of a MySQL query?",
+    "id": 399,
+    "question": "Which of the following is NOT supported by MySQL",
     "description": null,
     "answers": {
-      "answer_a": "The function mysqli_get_rows() returns the number of rows in a result set.",
-      "answer_b": "The function mysqli_num_rows() returns the number of rows in a result set.",
-      "answer_c": "The function mysqli_count_rows() returns the number of rows in a result set.",
+      "answer_a": "Temporary (Hash) Tables",
+      "answer_b": "Stored Procedures",
+      "answer_c": "Regular Expression Matching",
+      "answer_d": "Table Joining",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "MySQL"
+      }
+    ],
+    "category": "SQL",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 384,
+    "question": "Which program copies databases from one server to another?",
+    "description": null,
+    "answers": {
+      "answer_a": "Mysqlcopydb",
+      "answer_b": "Mysqldbflush",
+      "answer_c": "Mysqlflushdb",
+      "answer_d": "Mysqldbcopy",
+      "answer_e": "Mysqlmovedb",
+      "answer_f": "Mysqldbmove"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "true",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "MySQL"
+      }
+    ],
+    "category": "SQL",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 355,
+    "question": "The command DROP SCHEMA `STUDENTS`; will delete the students database.",
+    "description": null,
+    "answers": {
+      "answer_a": "True",
+      "answer_b": "False",
+      "answer_c": null,
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "MySQL"
+      }
+    ],
+    "category": "SQL",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 429,
+    "question": "The problem that occurs when one transaction updates a database item and then the transaction fails for some reason is ________.",
+    "description": null,
+    "answers": {
+      "answer_a": "Dirty Read Problem",
+      "answer_b": "Temporary Modify Problem",
+      "answer_c": "Temporary Select Problem",
+      "answer_d": "None of the above",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "MySQL"
+      }
+    ],
+    "category": "SQL",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 393,
+    "question": "The \"father\" Of MySQL Is ______.",
+    "description": null,
+    "answers": {
+      "answer_a": "Bill Joy",
+      "answer_b": "Stephanie Wall",
+      "answer_c": "Bill Gates",
+      "answer_d": "Michael Widenius",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "true",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "MySQL"
+      }
+    ],
+    "category": "SQL",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 408,
+    "question": "Which of these is not a valid name for a column",
+    "description": null,
+    "answers": {
+      "answer_a": "To",
+      "answer_b": "Near",
+      "answer_c": "Far",
+      "answer_d": "From",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "true",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "MySQL"
+      }
+    ],
+    "category": "SQL",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 394,
+    "question": "To use MySQL on your computer, you'll need",
+    "description": null,
+    "answers": {
+      "answer_a": "Perl, PHP Or Java",
+      "answer_b": "FTP And Telnet",
+      "answer_c": "Some Sort Of Client Program To Access The Databases",
+      "answer_d": "A Browser",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "MySQL"
+      }
+    ],
+    "category": "SQL",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 387,
+    "question": "Which function returns reference to Array of row values?",
+    "description": null,
+    "answers": {
+      "answer_a": "Fetch()",
+      "answer_b": "Fetchrow_arrayref()",
+      "answer_c": "Fetchrow_hashref()",
+      "answer_d": "Fetchrow_array()",
+      "answer_e": "Fetchrow_refarray()",
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "MySQL"
+      }
+    ],
+    "category": "SQL",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 345,
+    "question": "Which type of database management system represents relations using tables?",
+    "description": null,
+    "answers": {
+      "answer_a": "Network DBMS",
+      "answer_b": "Hierachical DBMS",
+      "answer_c": "Relational DBMS",
+      "answer_d": "Object Oriented DBMS",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "MySQL"
+      }
+    ],
+    "category": "SQL",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 231,
+    "question": "Which of the following SQL statements is correct?",
+    "description": null,
+    "answers": {
+      "answer_a": "SELECT cname, COUNT(cname) FROM Orders",
+      "answer_b": "SELECT cname, COUNT(cname) FROM Orders GROUP BY cname",
+      "answer_c": "SELECT cname, COUNT(cname) FROM Orders ORDER BY cname",
       "answer_d": null,
       "answer_e": null,
       "answer_f": null
@@ -313,10 +633,10 @@
     "tip": null,
     "tags": [
       {
-        "name": "PHP"
+        "name": "MySQL"
       }
     ],
-    "category": "Code",
-    "difficulty": "Easy"
+    "category": "SQL",
+    "difficulty": "Hard"
   }
 ]
