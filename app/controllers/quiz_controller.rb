@@ -1,6 +1,6 @@
 class QuizController < ApplicationController
   def start
-    #Rails.application.load_seed
+    Rails.application.load_seed
     @questions = QuizItem.all
     if params.include?(:flexRadioDefault)
       @answers = params[:flexRadioDefault]
