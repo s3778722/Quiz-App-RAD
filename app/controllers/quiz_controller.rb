@@ -40,14 +40,13 @@ class QuizController < ApplicationController
 
   def result
     d = DateTime.now.in_time_zone('Melbourne')
+    if session[:history].nil? 
+      ession[:history] ||= [] 
+    end
     #need one more space for the latest result
-    if session[:history].size >= 6
+    if session[:history].count >= 6 
       session[:history].shift()
     end
-    if session[:history].nil? 
-      session[:history] ||= [] 
-      session[:history] << "At #{d.strftime("%H:%M")}, #{d.strftime("%d/%m/%Y")}, you answered #{session[:marks]}/#{session[:max]} questions correctly"
-    else session[:history]
       session[:history] << "At #{d.strftime("%H:%M")}, #{d.strftime("%d/%m/%Y")}, you answered #{session[:marks]}/#{session[:max]} questions correctly"
     end
   end  
