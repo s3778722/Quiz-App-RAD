@@ -1,525 +1,141 @@
 [
   {
-    "id": 252,
-    "question": "Which of the following is the best way to modify a table to allow null values?",
+    "id": 871,
+    "question": "Volume mapping maps the host server's directory into the Docker container. The data will remain in a safe and accessible place if you do which of the following?",
     "description": null,
     "answers": {
-      "answer_a": "ALTER TABLE table MODIFY column varchar(255) null",
-      "answer_b": "ALTER TABLE table MODIFY column VARCHAR(255)",
-      "answer_c": "ALTER TABLE table CHANGE column column type DEFAULT NULL",
-      "answer_d": "ALTER table MODIFY column varchar(255) null",
-      "answer_e": "None of the above",
+      "answer_a": "re-create the container",
+      "answer_b": "backup the container",
+      "answer_c": "delete the container",
+      "answer_d": "migrate the container",
+      "answer_e": "break the container",
       "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "MySQL"
-      }
-    ],
-    "category": "SQL",
-    "difficulty": "Hard"
-  },
-  {
-    "id": 210,
-    "question": "DML is included into SQL language of:",
-    "description": null,
-    "answers": {
-      "answer_a": "managing users",
-      "answer_b": "managing transactions",
-      "answer_c": "description data",
-      "answer_d": "managing data",
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "true",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "MySQL"
-      }
-    ],
-    "category": "SQL",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 367,
-    "question": "Wildcards are",
-    "description": null,
-    "answers": {
-      "answer_a": "not supported by MySQL",
-      "answer_b": "characters such as % which perform single character matching",
-      "answer_c": "characters such as $ which perform pattern matches",
-      "answer_d": "used to perform pattern matches",
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "false",
-      "answer_c_correct": "true",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "MySQL"
-      }
-    ],
-    "category": "SQL",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 442,
-    "question": "MVD is known as",
-    "description": null,
-    "answers": {
-      "answer_a": "Many Value Dependency",
-      "answer_b": "More Value Dependency",
-      "answer_c": "Multi Value Dependency",
-      "answer_d": "All of the Above",
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "false",
-      "answer_c_correct": "true",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "MySQL"
-      }
-    ],
-    "category": "SQL",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 391,
-    "question": "Which one is the correct declaration for choosing the 'Character Set' other than default?",
-    "description": null,
-    "answers": {
-      "answer_a": "Varchar(20);",
-      "answer_b": "None Of The Mentioned",
-      "answer_c": "Varchar(20) Character Set;",
-      "answer_d": "Varchar(20) Character Set Utf8;",
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "true",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "MySQL"
-      }
-    ],
-    "category": "SQL",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 406,
-    "question": "In a LIKE clause, you can ask for any 6 Letter Value by writing:",
-    "description": null,
-    "answers": {
-      "answer_a": "LIKE .{6}",
-      "answer_b": "LIKE ??????",
-      "answer_c": "LIKE ^.{6}$",
-      "answer_d": "LIKE ______ (Six Underscore Characters)",
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "true",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "MySQL"
-      }
-    ],
-    "category": "SQL",
-    "difficulty": "Hard"
-  },
-  {
-    "id": 205,
-    "question": "Which operator is included in the data manipulation language (DML)?",
-    "description": null,
-    "answers": {
-      "answer_a": "INSERT",
-      "answer_b": "GRANT",
-      "answer_c": "CREATE",
-      "answer_d": "DROP",
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "MySQL"
-      }
-    ],
-    "category": "SQL",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 346,
-    "question": "MySQL supports multiple database storage engines.",
-    "description": null,
-    "answers": {
-      "answer_a": "True",
-      "answer_b": "False",
-      "answer_c": null,
-      "answer_d": null,
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "MySQL"
-      }
-    ],
-    "category": "SQL",
-    "difficulty": "Easy"
-  },
-  {
-    "id": 335,
-    "question": "Which of the following is not a SQL operator?",
-    "description": null,
-    "answers": {
-      "answer_a": "Between .. and ..",
-      "answer_b": "Like",
-      "answer_c": "In",
-      "answer_d": "Is null",
-      "answer_e": "Not in",
-      "answer_f": "All of the above are valid SQL operators"
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "true",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "MySQL"
-      }
-    ],
-    "category": "SQL",
-    "difficulty": "Hard"
-  },
-  {
-    "id": 360,
-    "question": "The query SELECT * FROM `movies` INSERT INTO `movies_archive`  will be executed without any errors.",
-    "description": null,
-    "answers": {
-      "answer_a": "True",
-      "answer_b": "False",
-      "answer_c": null,
-      "answer_d": null,
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "true",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "MySQL"
-      }
-    ],
-    "category": "SQL",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 376,
-    "question": "The syntax for adding a new column to an existing table is ALTER TABLE `table_name` ADD COLUMN `column_name` `data_type`;",
-    "description": null,
-    "answers": {
-      "answer_a": "True",
-      "answer_b": "False",
-      "answer_c": null,
-      "answer_d": null,
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "MySQL"
-      }
-    ],
-    "category": "SQL",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 402,
-    "question": "If you want to undo a GRANT, you should use",
-    "description": null,
-    "answers": {
-      "answer_a": "REVOKE",
-      "answer_b": "UNGRANT",
-      "answer_c": "UNDO",
-      "answer_d": "DELETE",
-      "answer_e": "REMOVE",
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "MySQL"
-      }
-    ],
-    "category": "SQL",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 434,
-    "question": "Which of the following statements is NOT true for views in SQL?",
-    "description": null,
-    "answers": {
-      "answer_a": "Select statement used in the view definition cannot include ORDER BY clause.",
-      "answer_b": "A view contains a copy of the data",
-      "answer_c": "A view drives its data from the base tables(s)",
-      "answer_d": "A view is updatable if it has been defined from a single relation",
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "true",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "MySQL"
-      }
-    ],
-    "category": "SQL",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 329,
-    "question": "How can you change table sctructure after it was created?",
-    "description": null,
-    "answers": {
-      "answer_a": "CHANGE TABLE",
-      "answer_b": "MODIFY TABLE",
-      "answer_c": "ALTER TABLE",
-      "answer_d": "UPDATE TABLE",
-      "answer_e": "It's not possible to change the structure",
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "false",
-      "answer_c_correct": "true",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "MySQL"
-      }
-    ],
-    "category": "SQL",
-    "difficulty": "Easy"
-  },
-  {
-    "id": 349,
-    "question": "The database development lifecycle is very important to the successful implementation of a database system.",
-    "description": null,
-    "answers": {
-      "answer_a": "True",
-      "answer_b": "False",
-      "answer_c": null,
-      "answer_d": null,
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "MySQL"
-      }
-    ],
-    "category": "SQL",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 354,
-    "question": "Which of the following SQL statements will generate an error when executed.",
-    "description": null,
-    "answers": {
-      "answer_a": "CREATE DATABASE students",
-      "answer_b": "IF NOT EXISTS CREATE DATABASE `STUDENTS`;",
-      "answer_c": "CREATE DATABASE students;",
-      "answer_d": "create database if not exists students",
-      "answer_e": "select * from students where student_id=%23;",
-      "answer_f": "select * from students student_id=23;"
     },
     "multiple_correct_answers": "true",
     "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "true",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Docker"
+      }
+    ],
+    "category": "Docker",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 810,
+    "question": "Once you’ve worked with an image, how do you push it to docker hub?",
+    "description": null,
+    "answers": {
+      "answer_a": "$ docker push <username image name>",
+      "answer_b": "$ docker push <username/image name>",
+      "answer_c": "$ docker --push <username image name>",
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
       "answer_a_correct": "false",
       "answer_b_correct": "true",
       "answer_c_correct": "false",
       "answer_d_correct": "false",
-      "answer_e_correct": "true",
-      "answer_f_correct": "true"
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
     },
     "correct_answer": "answer_a",
     "explanation": null,
     "tip": null,
     "tags": [
       {
-        "name": "MySQL"
+        "name": "Docker"
       }
     ],
-    "category": "SQL",
+    "category": "Docker",
     "difficulty": "Medium"
   },
   {
-    "id": 409,
-    "question": "Which statement is used to insert a new data in a database?",
+    "id": 963,
+    "question": "Select all true statements for a node in Kubernetes?",
     "description": null,
     "answers": {
-      "answer_a": "INSERT NEW",
-      "answer_b": "UPDATE",
-      "answer_c": "INSERT INTO",
-      "answer_d": "Add New",
+      "answer_a": "A node is a worker machine in Kubernetes, previously known as a minion",
+      "answer_b": "Each node contains the services necessary to run pods and is managed by the master components",
+      "answer_c": "A node may be a VM or physical machine, depending on the cluster.",
+      "answer_d": "There is only one node in each Kubernetes cluster",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "true",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "true",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Kubernetes"
+      }
+    ],
+    "category": "Docker",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 889,
+    "question": "If you exit a container accidentally, will you lose all the work?",
+    "description": null,
+    "answers": {
+      "answer_a": "True",
+      "answer_b": "False",
+      "answer_c": null,
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Docker"
+      }
+    ],
+    "category": "Docker",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 1033,
+    "question": "How to scale a service to 7 replicas in Docker Swarm?",
+    "description": null,
+    "answers": {
+      "answer_a": "docker service scale name_of_your_service_here=7",
+      "answer_b": "docker service replica-set name_of_your_service_here=7",
+      "answer_c": "docker service update name_of_your_service_here=7",
+      "answer_d": "docker service upgrade name_of_your_service_here=7",
       "answer_e": null,
       "answer_f": null
     },
@@ -537,28 +153,28 @@
     "tip": null,
     "tags": [
       {
-        "name": "MySQL"
+        "name": "Docker"
       }
     ],
-    "category": "SQL",
+    "category": "Docker",
     "difficulty": "Medium"
   },
   {
-    "id": 206,
-    "question": "SQL (Structured Query Language) is:",
+    "id": 802,
+    "question": "How do you create a docker container from an image?",
     "description": null,
     "answers": {
-      "answer_a": "imperative programming language",
-      "answer_b": "the language of structured queries",
-      "answer_c": "the language of queries by pattern",
-      "answer_d": "DBMS (DataBase Management System)",
+      "answer_a": "docker run -it -d <image_name>",
+      "answer_b": "docker --run -it -d <image_name>",
+      "answer_c": "docker run it d <image_name>",
+      "answer_d": null,
       "answer_e": null,
       "answer_f": null
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "true",
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
       "answer_c_correct": "false",
       "answer_d_correct": "false",
       "answer_e_correct": "false",
@@ -569,28 +185,28 @@
     "tip": null,
     "tags": [
       {
-        "name": "MySQL"
+        "name": "Docker"
       }
     ],
-    "category": "SQL",
-    "difficulty": "Easy"
+    "category": "Docker",
+    "difficulty": "Medium"
   },
   {
-    "id": 474,
-    "question": "What type of join is needed when you wish to return rows that have matching values?",
+    "id": 177,
+    "question": "Which command is used to access a running container?",
     "description": null,
     "answers": {
-      "answer_a": "Equi-join",
-      "answer_b": "All of the mentioned.",
-      "answer_c": "Outer join",
-      "answer_d": "Natural join",
-      "answer_e": "None of the mentioned.",
+      "answer_a": "docker exec -it container_id bash",
+      "answer_b": "docker fetch container",
+      "answer_c": "docker run container_id bash",
+      "answer_d": "docker login container_id",
+      "answer_e": null,
       "answer_f": null
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "true",
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
       "answer_c_correct": "false",
       "answer_d_correct": "false",
       "answer_e_correct": "false",
@@ -601,21 +217,21 @@
     "tip": null,
     "tags": [
       {
-        "name": "MySQL"
+        "name": "Docker"
       }
     ],
-    "category": "SQL",
-    "difficulty": "Hard"
+    "category": "Docker",
+    "difficulty": "Easy"
   },
   {
-    "id": 393,
-    "question": "The \"father\" Of MySQL Is ______.",
+    "id": 843,
+    "question": "Following Docker command: docker push user_name/repository_name  is used to:",
     "description": null,
     "answers": {
-      "answer_a": "Bill Joy",
-      "answer_b": "Stephanie Wall",
-      "answer_c": "Bill Gates",
-      "answer_d": "Michael Widenius",
+      "answer_a": "Activate default VM machine",
+      "answer_b": "Commit changes done in a Docker image",
+      "answer_c": "Push changes done in an docker image into Docker Hub",
+      "answer_d": "Build an image",
       "answer_e": null,
       "answer_f": null
     },
@@ -623,8 +239,8 @@
     "correct_answers": {
       "answer_a_correct": "false",
       "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "true",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false",
       "answer_e_correct": "false",
       "answer_f_correct": "false"
     },
@@ -633,10 +249,394 @@
     "tip": null,
     "tags": [
       {
-        "name": "MySQL"
+        "name": "Docker"
       }
     ],
-    "category": "SQL",
+    "category": "Docker",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 956,
+    "question": "How to remove two pods labelled 'production' and 'development'",
+    "description": null,
+    "answers": {
+      "answer_a": "$ kubectl delete pods -l 'env in (production, development)'",
+      "answer_b": "$ kubectl trim pods -l 'env in (production, development)'",
+      "answer_c": null,
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Kubernetes"
+      }
+    ],
+    "category": "Docker",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 934,
+    "question": "What do you know about Sematext Docker Agent?",
+    "description": null,
+    "answers": {
+      "answer_a": "Sematext Docker agent runs as a large container in some Docker host and gathers metrics, events and logs for all the containers and cluster nodes.",
+      "answer_b": "Sematext Docker agent runs as a large container in each Docker port and gathers metrics, events and logs for some of the containers and cluster nodes.",
+      "answer_c": "Sematext Docker agent runs as a small container in each Docker host and gathers metrics, events and logs for all the containers and cluster nodes.",
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Docker"
+      }
+    ],
+    "category": "Docker",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 187,
+    "question": "On Docker Hub, you get ten private repositories for free with your Docker Hub user account. If you need more accounts, you can upgrade your Docker Hub plan.",
+    "description": null,
+    "answers": {
+      "answer_a": "True",
+      "answer_b": "False",
+      "answer_c": null,
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Docker"
+      }
+    ],
+    "category": "Docker",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 827,
+    "question": "Docker containers are based on open standard",
+    "description": null,
+    "answers": {
+      "answer_a": "Allowing containers to run on all major Linux distributions and Microsoft operating systems",
+      "answer_b": "Allowing containers to run on all Microsoft operating systems only",
+      "answer_c": "Allowing containers to run on all major Linux distributions only",
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Docker"
+      }
+    ],
+    "category": "Docker",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 825,
+    "question": "How to monitor Docker containers in production?",
+    "description": null,
+    "answers": {
+      "answer_a": "Docker provides functionalities like docker stats and docker events to monitor container in production.",
+      "answer_b": "Docker provides statistics like docker stats and docker events to monitor pages in production.",
+      "answer_c": "Docker provides functionalities like docker stats and docker events to monitor docker in production.",
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Docker"
+      }
+    ],
+    "category": "Docker",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 175,
+    "question": "What is Docker Swarm?",
+    "description": null,
+    "answers": {
+      "answer_a": "Container orchestration tool",
+      "answer_b": "Container registry",
+      "answer_c": "Text document that contains all the commands",
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Docker"
+      }
+    ],
+    "category": "Docker",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 948,
+    "question": "Which command will you use to list all deployments?",
+    "description": null,
+    "answers": {
+      "answer_a": "kubectl get deploy",
+      "answer_b": "kubectl require deployments",
+      "answer_c": "kubectl get deployments",
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Kubernetes"
+      }
+    ],
+    "category": "Docker",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 1026,
+    "question": "What is Docker Swarm mode?",
+    "description": null,
+    "answers": {
+      "answer_a": "A swarm is the name of the latest Docker release",
+      "answer_b": "A swarm is a group of machines that are running Docker and joined into a cluster",
+      "answer_c": "Docker swarm is also known as Docker Hub",
+      "answer_d": "Docker swarm is a tool for managing your CI/CD pipelines",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Docker"
+      }
+    ],
+    "category": "Docker",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 853,
+    "question": "How to stop a docker container immediately?",
+    "description": null,
+    "answers": {
+      "answer_a": "$ docker terminate",
+      "answer_b": "$ docker kill",
+      "answer_c": "$ docker stop",
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Docker"
+      }
+    ],
+    "category": "Docker",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 866,
+    "question": "How to logout from dockerhub.",
+    "description": null,
+    "answers": {
+      "answer_a": "$ docker exit",
+      "answer_b": "$ docker log-out",
+      "answer_c": "$ docker logout",
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Docker"
+      }
+    ],
+    "category": "Docker",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 890,
+    "question": "Did Docker pioneer container technology?",
+    "description": null,
+    "answers": {
+      "answer_a": "True",
+      "answer_b": "False",
+      "answer_c": null,
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Docker"
+      }
+    ],
+    "category": "Docker",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 857,
+    "question": "What is the command in Docker which lists the details of all the network in the cluster.",
+    "description": null,
+    "answers": {
+      "answer_a": "$ docker network as",
+      "answer_b": "$ docker network ls",
+      "answer_c": "$ docker network ps",
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Docker"
+      }
+    ],
+    "category": "Docker",
     "difficulty": "Medium"
   }
 ]
