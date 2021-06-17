@@ -13,10 +13,14 @@ class HomeController < ApplicationController
       session[:max] = @max
       count = 0
       categories = Array.new()
+      difficulty = nil
+
       session[:docker] = false
       session[:devops] = false
       session[:linux] = false
       session[:sql] = false
+      session[:difficulty] = false
+
       if params.include?(:docker)
         count += 1
         categories << "docker"
@@ -37,17 +41,21 @@ class HomeController < ApplicationController
         categories << "sql"
         session[:sql] = true
       end
+      if params.include?(:flexRadioDefault)
+        difficulty = params[:flexRadioDefault]
+        session[:difficulty] = difficulty
+      end
 
       if count == 1
-        url = "https://quizapi.io/api/v1/questions?apiKey=A9ya16s39eH0hdu3BgxigMuxVa4zbjMaVjHxCOyt&limit=10&category=#{categories[0]}"
+        url = "https://quizapi.io/api/v1/questions?apiKey=A9ya16s39eH0hdu3BgxigMuxVa4zbjMaVjHxCOyt&limit=10&category=#{categories[0]}&difficulty=#{difficulty}"
         uri = URI(url)
         response = Net::HTTP.get(uri)
         result = JSON.parse(response)
         result.shuffle!
         File.write('./quiz.json', JSON.pretty_generate(result))
       elsif count == 2
-        url = "https://quizapi.io/api/v1/questions?apiKey=A9ya16s39eH0hdu3BgxigMuxVa4zbjMaVjHxCOyt&limit=10&category=#{categories[0]}"
-        url2 = "https://quizapi.io/api/v1/questions?apiKey=A9ya16s39eH0hdu3BgxigMuxVa4zbjMaVjHxCOyt&limit=10&category=#{categories[1]}"
+        url = "https://quizapi.io/api/v1/questions?apiKey=A9ya16s39eH0hdu3BgxigMuxVa4zbjMaVjHxCOyt&limit=10&category=#{categories[0]}&difficulty=#{difficulty}"
+        url2 = "https://quizapi.io/api/v1/questions?apiKey=A9ya16s39eH0hdu3BgxigMuxVa4zbjMaVjHxCOyt&limit=10&category=#{categories[1]}&difficulty=#{difficulty}"
         uri = URI(url)
         response = Net::HTTP.get(uri)
         uri2 = URI(url2)
@@ -58,9 +66,9 @@ class HomeController < ApplicationController
         result.shuffle!
         File.write('./quiz.json', JSON.pretty_generate(result))
       elsif count == 3
-        url = "https://quizapi.io/api/v1/questions?apiKey=A9ya16s39eH0hdu3BgxigMuxVa4zbjMaVjHxCOyt&limit=10&category=#{categories[0]}"
-        url2 = "https://quizapi.io/api/v1/questions?apiKey=A9ya16s39eH0hdu3BgxigMuxVa4zbjMaVjHxCOyt&limit=10&category=#{categories[1]}"
-        url3 = "https://quizapi.io/api/v1/questions?apiKey=A9ya16s39eH0hdu3BgxigMuxVa4zbjMaVjHxCOyt&limit=10&category=#{categories[2]}"
+        url = "https://quizapi.io/api/v1/questions?apiKey=A9ya16s39eH0hdu3BgxigMuxVa4zbjMaVjHxCOyt&limit=10&category=#{categories[0]}&difficulty=#{difficulty}"
+        url2 = "https://quizapi.io/api/v1/questions?apiKey=A9ya16s39eH0hdu3BgxigMuxVa4zbjMaVjHxCOyt&limit=10&category=#{categories[1]}&difficulty=#{difficulty}"
+        url3 = "https://quizapi.io/api/v1/questions?apiKey=A9ya16s39eH0hdu3BgxigMuxVa4zbjMaVjHxCOyt&limit=10&category=#{categories[2]}&difficulty=#{difficulty}"
         uri = URI(url)
         uri2 = URI(url2)
         uri3 = URI(url3)
@@ -75,10 +83,10 @@ class HomeController < ApplicationController
         result.shuffle!
         File.write('./quiz.json', JSON.pretty_generate(result))
       elsif count == 4
-        url = "https://quizapi.io/api/v1/questions?apiKey=A9ya16s39eH0hdu3BgxigMuxVa4zbjMaVjHxCOyt&limit=10&category=#{categories[0]}"
-        url2 = "https://quizapi.io/api/v1/questions?apiKey=A9ya16s39eH0hdu3BgxigMuxVa4zbjMaVjHxCOyt&limit=10&category=#{categories[1]}"
-        url3 = "https://quizapi.io/api/v1/questions?apiKey=A9ya16s39eH0hdu3BgxigMuxVa4zbjMaVjHxCOyt&limit=10&category=#{categories[2]}"
-        url4 = "https://quizapi.io/api/v1/questions?apiKey=A9ya16s39eH0hdu3BgxigMuxVa4zbjMaVjHxCOyt&limit=10&category=#{categories[3]}"
+        url = "https://quizapi.io/api/v1/questions?apiKey=A9ya16s39eH0hdu3BgxigMuxVa4zbjMaVjHxCOyt&limit=10&category=#{categories[0]}&difficulty=#{difficulty}"
+        url2 = "https://quizapi.io/api/v1/questions?apiKey=A9ya16s39eH0hdu3BgxigMuxVa4zbjMaVjHxCOyt&limit=10&category=#{categories[1]}&difficulty=#{difficulty}"
+        url3 = "https://quizapi.io/api/v1/questions?apiKey=A9ya16s39eH0hdu3BgxigMuxVa4zbjMaVjHxCOyt&limit=10&category=#{categories[2]}&difficulty=#{difficulty}"
+        url4 = "https://quizapi.io/api/v1/questions?apiKey=A9ya16s39eH0hdu3BgxigMuxVa4zbjMaVjHxCOyt&limit=10&category=#{categories[3]}&difficulty=#{difficulty}"
         uri = URI(url)
         uri2 = URI(url2)
         uri3 = URI(url3)

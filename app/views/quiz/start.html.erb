@@ -1,19 +1,4 @@
-<% flash.each do |type, msg| %>
-  <br>
-  <div class="alert alert-primary" role="alert">
-    <%= msg %>
-  </div>
-<% end %>
-
-<%= @questions[0]['qid']%>
-
-<h1><%= session[:marks]%></h1>
-<h1><%= session[:times]%></h1>
-<h1><%= session[:max]%></h1>
-<h1><%= session[:history]%></h1>
-<h1><%= session[:combo]%></h1>
-
-
+<br>
 <h1><%=@questions[session[:times]]['question']%></h1>
 <h1><% a = @questions[session[:times]]['answers']%></h1>
 

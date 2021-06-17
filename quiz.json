@@ -1,13 +1,13 @@
 [
   {
-    "id": 425,
-    "question": "TCL is used for _______?",
+    "id": 654,
+    "question": "Which option can be used with ‘rm’ command to prompt for file removal?",
     "description": null,
     "answers": {
-      "answer_a": "Control access to data stored in a database",
-      "answer_b": "Managing the changes made by DML statements",
-      "answer_c": "Defining database schema",
-      "answer_d": "None of the mentioned",
+      "answer_a": "-ask",
+      "answer_b": "-i",
+      "answer_c": "-c",
+      "answer_d": "-n",
       "answer_e": null,
       "answer_f": null
     },
@@ -25,21 +25,117 @@
     "tip": null,
     "tags": [
       {
-        "name": "MySQL"
+        "name": "BASH"
       }
     ],
-    "category": "SQL",
+    "category": "Linux",
     "difficulty": "Easy"
   },
   {
-    "id": 691,
-    "question": "Which operator can be used to throw a process into background?",
+    "id": 720,
+    "question": "Cronjobs in kubernetes run in",
     "description": null,
     "answers": {
-      "answer_a": "&",
-      "answer_b": "&&",
-      "answer_c": "|",
-      "answer_d": "||",
+      "answer_a": "UTC only",
+      "answer_b": "Based on NTP settings",
+      "answer_c": "Master node local timezone",
+      "answer_d": "GMT only",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Kubernetes"
+      }
+    ],
+    "category": "Linux",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 714,
+    "question": "What could be used to program additional authentication logic besides available authenticator modules?",
+    "description": null,
+    "answers": {
+      "answer_a": "Kube Vault",
+      "answer_b": "Authentication Proxy",
+      "answer_c": "Kube Auth Service",
+      "answer_d": "Kubernetes Role Manager",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": "Using Authentication Proxy, the API server can extract the information it needs about the user’s identity using the HTTP headers that you specify. Let’s have a quick example to demonstrate this concept:",
+    "tip": null,
+    "tags": [
+      {
+        "name": "Kubernetes"
+      }
+    ],
+    "category": "Linux",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 725,
+    "question": "How to list all Kubernetes pods in the current namespace, with more details?",
+    "description": null,
+    "answers": {
+      "answer_a": "kubectl get pods -o wide",
+      "answer_b": "kubectl get pods -f more",
+      "answer_c": "kubectl get pods -v",
+      "answer_d": "kubectl get pods -o details",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Kubernetes"
+      }
+    ],
+    "category": "Linux",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 702,
+    "question": "Which command can be used to display basic information about your server?",
+    "description": null,
+    "answers": {
+      "answer_a": "uname",
+      "answer_b": "info",
+      "answer_c": "ls",
+      "answer_d": "show",
       "answer_e": null,
       "answer_f": null
     },
@@ -57,21 +153,21 @@
     "tip": null,
     "tags": [
       {
-        "name": "BASH"
+        "name": "Linux"
       }
     ],
     "category": "Linux",
     "difficulty": "Easy"
   },
   {
-    "id": 398,
-    "question": "MySQL runs on which Operating Systems?",
+    "id": 748,
+    "question": "The API server is also known as:",
     "description": null,
     "answers": {
-      "answer_a": "Unix And Linux Only",
-      "answer_b": "Windows only",
-      "answer_c": "Linux And Mac OS-X Only",
-      "answer_d": "Unix, Linux, Windows,Mac And Others",
+      "answer_a": "kubeapi",
+      "answer_b": "kube-server",
+      "answer_c": "k8s-apiserver",
+      "answer_d": "kube-apiserver",
       "answer_e": null,
       "answer_f": null
     },
@@ -89,28 +185,28 @@
     "tip": null,
     "tags": [
       {
-        "name": "MySQL"
+        "name": "Kubernetes"
       }
     ],
-    "category": "SQL",
+    "category": "Linux",
     "difficulty": "Easy"
   },
   {
-    "id": 336,
-    "question": "Which of the following is not a valid comparison operator?",
+    "id": 652,
+    "question": "What is the She-bang line in a shell script",
     "description": null,
     "answers": {
-      "answer_a": "==",
-      "answer_b": "<>",
-      "answer_c": "<=>",
-      "answer_d": "!=",
+      "answer_a": "#",
+      "answer_b": "#!",
+      "answer_c": "!#",
+      "answer_d": "None of the above",
       "answer_e": null,
       "answer_f": null
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
       "answer_c_correct": "false",
       "answer_d_correct": "false",
       "answer_e_correct": "false",
@@ -121,20 +217,20 @@
     "tip": null,
     "tags": [
       {
-        "name": "MySQL"
+        "name": "BASH"
       }
     ],
-    "category": "SQL",
-    "difficulty": "Hard"
+    "category": "Linux",
+    "difficulty": "Easy"
   },
   {
-    "id": 349,
-    "question": "The database development lifecycle is very important to the successful implementation of a database system.",
+    "id": 823,
+    "question": "BASH stands for:",
     "description": null,
     "answers": {
-      "answer_a": "True",
-      "answer_b": "False",
-      "answer_c": null,
+      "answer_a": "Bourne Again SHell",
+      "answer_b": "BAsic SHell",
+      "answer_c": "Basic Async SHell",
       "answer_d": null,
       "answer_e": null,
       "answer_f": null
@@ -148,39 +244,7 @@
       "answer_e_correct": "false",
       "answer_f_correct": "false"
     },
-    "correct_answer": "answer_a",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "MySQL"
-      }
-    ],
-    "category": "SQL",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 647,
-    "question": "Which command can be used to count characters in a text file?",
-    "description": null,
-    "answers": {
-      "answer_a": "ccount",
-      "answer_b": "fsize",
-      "answer_c": "count",
-      "answer_d": "wc",
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "true",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
+    "correct_answer": null,
     "explanation": null,
     "tip": null,
     "tags": [
@@ -192,46 +256,14 @@
     "difficulty": "Easy"
   },
   {
-    "id": 397,
-    "question": "Commands passed to the MySQL daemon are written in",
+    "id": 694,
+    "question": "Which command can be used to rename a file/directory?",
     "description": null,
     "answers": {
-      "answer_a": "English",
-      "answer_b": "The Structured Query Language",
-      "answer_c": "Your Choice From Perl, PHP, Java Or Some Other Languages",
-      "answer_d": "Swedish",
-      "answer_e": "Binary",
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "true",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "MySQL"
-      }
-    ],
-    "category": "SQL",
-    "difficulty": "Easy"
-  },
-  {
-    "id": 740,
-    "question": "How to stream pod logs (stdout) in Kubernetes?",
-    "description": null,
-    "answers": {
-      "answer_a": "kubectl logs -f my-pod",
-      "answer_b": "kubectl pod -f my-pod",
-      "answer_c": "kubectl stream -f my-pod",
-      "answer_d": "kubectl logs my-pod",
+      "answer_a": "mv",
+      "answer_b": "cp",
+      "answer_c": "rename",
+      "answer_d": "rm",
       "answer_e": null,
       "answer_f": null
     },
@@ -241,202 +273,10 @@
       "answer_b_correct": "false",
       "answer_c_correct": "false",
       "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "Kubernetes"
-      }
-    ],
-    "category": "Linux",
-    "difficulty": "Easy"
-  },
-  {
-    "id": 1072,
-    "question": "If we wish to mount a directory with Read Only option, which of the following is correct",
-    "description": null,
-    "answers": {
-      "answer_a": "mount -t ext4 -o noexect,ro /path/to-dir /mnt/folder",
-      "answer_b": "mount ext4 -no-read-only /path/to-dir /mnt/folder",
-      "answer_c": "mount -t ext4 -o noexect,ro /mnt/folder /path/to-dir",
-      "answer_d": "mount ext4 -no-read-only /mnt/folder /path/to-dir",
-      "answer_e": "mount ext4 noexect,ro /path/to-dir /mnt/folder",
-      "answer_f": "mount ext4 -no-read-only /mnt/folder /path/to-dir"
-    },
-    "multiple_correct_answers": "true",
-    "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "true",
       "answer_e_correct": "false",
       "answer_f_correct": "false"
     },
     "correct_answer": null,
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "Linux"
-      }
-    ],
-    "category": "Linux",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 715,
-    "question": "What language was Kubernetes written in?",
-    "description": null,
-    "answers": {
-      "answer_a": "Go",
-      "answer_b": "C++",
-      "answer_c": "Java",
-      "answer_d": "C",
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": "The Kubernetes project is written in the Go programming language, and you can browse its source code on GitHub.",
-    "tip": null,
-    "tags": [
-      {
-        "name": "Kubernetes"
-      }
-    ],
-    "category": "Linux",
-    "difficulty": "Easy"
-  },
-  {
-    "id": 362,
-    "question": "What command is used to permanently remove a record from a database table?",
-    "description": null,
-    "answers": {
-      "answer_a": "DROP",
-      "answer_b": "REMOVE",
-      "answer_c": "DELETE",
-      "answer_d": "CUT",
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "false",
-      "answer_c_correct": "true",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "MySQL"
-      }
-    ],
-    "category": "SQL",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 402,
-    "question": "If you want to undo a GRANT, you should use",
-    "description": null,
-    "answers": {
-      "answer_a": "REVOKE",
-      "answer_b": "UNGRANT",
-      "answer_c": "UNDO",
-      "answer_d": "DELETE",
-      "answer_e": "REMOVE",
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "MySQL"
-      }
-    ],
-    "category": "SQL",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 742,
-    "question": "How to dump pod logs, with label name=myLabel (stdout) in Kubernetes",
-    "description": null,
-    "answers": {
-      "answer_a": "kubectl log name=myLabel",
-      "answer_b": "kubectl pod -l name=myLabel",
-      "answer_c": "kubectl logs -l name=myLabel",
-      "answer_d": "kubectl logs -l .name[*]=myLabel",
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "false",
-      "answer_c_correct": "true",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "Kubernetes"
-      }
-    ],
-    "category": "Linux",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 751,
-    "question": "How to define an array in bash",
-    "description": null,
-    "answers": {
-      "answer_a": "array=(“Hi” “my” “name” “is”)",
-      "answer_b": "array=[“Hi” “my” “name” “is”]",
-      "answer_c": "array=[[“Hi” “my” “name” “is”]]",
-      "answer_d": "array=((“Hi” “my” “name” “is”))",
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
     "explanation": null,
     "tip": null,
     "tags": [
@@ -448,56 +288,24 @@
       }
     ],
     "category": "Linux",
-    "difficulty": "Medium"
+    "difficulty": "Easy"
   },
   {
-    "id": 344,
-    "question": "A systematic collection of data stored in a central location is known as?",
+    "id": 737,
+    "question": "How to delete a pod in Kubernetes using the type and name specified in pod.json?",
     "description": null,
     "answers": {
-      "answer_a": "CSV",
-      "answer_b": "Flat file",
-      "answer_c": "Database",
-      "answer_d": "Excel",
+      "answer_a": "kubectl delete ./pod.json",
+      "answer_b": "kubectl delete -f ./pod.json",
+      "answer_c": "kubectl remove -f ./pod.json",
+      "answer_d": "kubectl remove ./pod.json",
       "answer_e": null,
       "answer_f": null
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
       "answer_a_correct": "false",
-      "answer_b_correct": "false",
-      "answer_c_correct": "true",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "MySQL"
-      }
-    ],
-    "category": "SQL",
-    "difficulty": "Easy"
-  },
-  {
-    "id": 419,
-    "question": "Which command will delete a table called 'test':",
-    "description": null,
-    "answers": {
-      "answer_a": "DROP TABLE test",
-      "answer_b": "DROP test",
-      "answer_c": "DROP test WHERE Confirm = \"YES\"",
-      "answer_d": "DELETE test WHERE Confirm = \"YES\"",
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
+      "answer_b_correct": "true",
       "answer_c_correct": "false",
       "answer_d_correct": "false",
       "answer_e_correct": "false",
@@ -508,135 +316,7 @@
     "tip": null,
     "tags": [
       {
-        "name": "MySQL"
-      }
-    ],
-    "category": "SQL",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 657,
-    "question": "Which command can give disk usage summary?",
-    "description": null,
-    "answers": {
-      "answer_a": "chkdsk",
-      "answer_b": "fdisk",
-      "answer_c": "du",
-      "answer_d": "df",
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "false",
-      "answer_c_correct": "true",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "BASH"
-      }
-    ],
-    "category": "Linux",
-    "difficulty": "Easy"
-  },
-  {
-    "id": 379,
-    "question": "What will be the output of the query SELECT * FROM `members` LIMIT 1, 2;",
-    "description": null,
-    "answers": {
-      "answer_a": "the query will generate an error",
-      "answer_b": "the query will return all records from the members table",
-      "answer_c": "the query will return the first 2 records",
-      "answer_d": "the query will return skip the first record then return the following 2 records only",
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "true",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "MySQL"
-      }
-    ],
-    "category": "SQL",
-    "difficulty": "Easy"
-  },
-  {
-    "id": 1075,
-    "question": "In which file, can we permanently change the SWAP priority",
-    "description": null,
-    "answers": {
-      "answer_a": "/etc/fstab",
-      "answer_b": "/etc/prswap",
-      "answer_c": "/etc/swappriority",
-      "answer_d": "/etc/boot.conf",
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": null,
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "Linux"
-      }
-    ],
-    "category": "Linux",
-    "difficulty": "Easy"
-  },
-  {
-    "id": 653,
-    "question": "What is the ls switch  to view the inode numbers",
-    "description": null,
-    "answers": {
-      "answer_a": "-i",
-      "answer_b": "-n",
-      "answer_c": "-d",
-      "answer_d": "-a",
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "BASH"
+        "name": "Kubernetes"
       }
     ],
     "category": "Linux",

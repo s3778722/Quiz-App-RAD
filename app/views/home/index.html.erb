@@ -8,11 +8,15 @@
 <%= form_with url: "/set", method: :post do |form| %>
 <div class="row">
     <div class="col text-center">
-        <h5>Number of Questions<h5>
+        <h5><strong>Number of Questions</strong><h5>
         <input type="number" name="max" min="4" max="8" value ="4">
     </div>
 </div>
 <br>
+<div class="col text-center">
+    <h5><strong>Category</strong><h5>
+
+</div>
 <div class="col text-center">
     <input name="docker" type="checkbox" value="Box 1"><label>Docker</label>
     <input name="devops" type="checkbox" value="Box 2"><label>DevOps</label>
@@ -20,6 +24,34 @@
     <input name="sql" type="checkbox" value="Box 4"><label>SQL</label>
 </div>
 <br>
+
+<div class="col text-center">
+    <h5><strong>Difficulty</strong><h5>
+</div>
+<div class="d-flex justify-content-center" style="margin:20px;">
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="Easy" checked>
+  <label class="form-check-label" for="flexRadioDefault1">
+    Easy
+  </label>
+</div>
+<br>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="Medium">
+  <label class="form-check-label" for="flexRadioDefault2">
+    Medium
+  </label>
+</div>
+<br>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" value="Hard">
+  <label class="form-check-label" for="flexRadioDefault3">
+    Hard
+  </label>
+</div>
+<br>
+</div>
+
 <div class="row">
     <div class="col text-center">
     <h3><input type="submit" value="Submit"></h3>
