@@ -11,4 +11,12 @@ class HomeController < ApplicationController
     result = JSON.parse(response)
     File.write('./quiz.json', JSON.pretty_generate(result))
   end
+
+  def set
+    if params.include?(:max)
+      @max = params[:max]
+      session[:max] = @max
+      redirect_to(quiz_get_path, :notice => session[:max])
+    end  
+  end 
 end

@@ -1,13 +1,109 @@
 [
   {
-    "id": 82,
-    "question": "Which operator is used to check if two values are equal and of same data type?",
+    "id": 388,
+    "question": "Which is the log in which data changes received from a replication master server are written?",
     "description": null,
     "answers": {
-      "answer_a": "==",
-      "answer_b": "=",
-      "answer_c": "===",
-      "answer_d": "!=",
+      "answer_a": "Error Log",
+      "answer_b": "Relay Log",
+      "answer_c": "General Query Log",
+      "answer_d": "Binary Log",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "MySQL"
+      }
+    ],
+    "category": "SQL",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 788,
+    "question": "How can we destroy a PHP session:",
+    "description": null,
+    "answers": {
+      "answer_a": "session_destroy()",
+      "answer_b": "destroy_session()",
+      "answer_c": "session()",
+      "answer_d": "startD()",
+      "answer_e": "sessionDestroy()",
+      "answer_f": "destroySession()"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "PHP"
+      }
+    ],
+    "category": "Code",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 814,
+    "question": "How to remove unused data (all unused containers, networks, images (both dangling and unreferenced), and optionally, volumes) in Docker.,",
+    "description": null,
+    "answers": {
+      "answer_a": "docker system --prune",
+      "answer_b": "docker system prune sys",
+      "answer_c": "docker system prune",
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Docker"
+      }
+    ],
+    "category": "Docker",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 127,
+    "question": "What is the correct HTML for adding a background color?",
+    "description": null,
+    "answers": {
+      "answer_a": "<body bg=\"yellow\">",
+      "answer_b": "<background>yellow</background>",
+      "answer_c": "<body style=\"background-color:yellow;\">",
+      "answer_d": "<body style bg=\"yellow\">",
       "answer_e": null,
       "answer_f": null
     },
@@ -25,20 +121,116 @@
     "tip": null,
     "tags": [
       {
-        "name": "PHP"
+        "name": "HTML"
       }
     ],
     "category": "",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 1033,
+    "question": "How to scale a service to 7 replicas in Docker Swarm?",
+    "description": null,
+    "answers": {
+      "answer_a": "docker service scale name_of_your_service_here=7",
+      "answer_b": "docker service replica-set name_of_your_service_here=7",
+      "answer_c": "docker service update name_of_your_service_here=7",
+      "answer_d": "docker service upgrade name_of_your_service_here=7",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Docker"
+      }
+    ],
+    "category": "Docker",
     "difficulty": "Medium"
   },
   {
-    "id": 603,
-    "question": "How is the ternary conditional operator used in PHP?",
+    "id": 891,
+    "question": "Is it possible to build environment-agnostic systems with Docker?",
     "description": null,
     "answers": {
-      "answer_a": "Expression_1?Expression_2 : Expression_3;",
-      "answer_b": "Expression_1:Expression_2 : Expression_3;",
-      "answer_c": "Expression_1?Expression_2 ? Expression_3;",
+      "answer_a": "True",
+      "answer_b": "False",
+      "answer_c": null,
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Docker"
+      }
+    ],
+    "category": "Docker",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 396,
+    "question": "What kind of replication is supported by the MySQL Server?",
+    "description": null,
+    "answers": {
+      "answer_a": "Multiple-master Replication",
+      "answer_b": "MySQL Doesn't Support Replication",
+      "answer_c": "Master To Slave Replication",
+      "answer_d": "Single File Based Clustering",
+      "answer_e": "Master to Master Replication",
+      "answer_f": null
+    },
+    "multiple_correct_answers": "true",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false",
+      "answer_e_correct": "true",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "MySQL"
+      }
+    ],
+    "category": "SQL",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 879,
+    "question": "What is the reason for using Volumes in Docker?",
+    "description": null,
+    "answers": {
+      "answer_a": "To create exceptions to the `--read-only` mode.",
+      "answer_b": "To add plugins for extended file attributes.",
+      "answer_c": "To fail access to persisted data such as data in a database.",
       "answer_d": null,
       "answer_e": null,
       "answer_f": null
@@ -57,51 +249,19 @@
     "tip": null,
     "tags": [
       {
-        "name": "PHP"
+        "name": "Docker"
       }
     ],
-    "category": "Code",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 571,
-    "question": "PHP is an example of ___________ scripting language.",
-    "description": null,
-    "answers": {
-      "answer_a": "Server-side",
-      "answer_b": "In-side",
-      "answer_c": "Browser-side",
-      "answer_d": "Client-side",
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "PHP"
-      }
-    ],
-    "category": "Code",
+    "category": "Docker",
     "difficulty": "Easy"
   },
   {
-    "id": 361,
-    "question": "What will be the output of the following query INSERT INTO students (student name) VALUE ('James Lenon');",
+    "id": 364,
+    "question": "The clause ORDER is used to sort records in either ascending or descending order.",
     "description": null,
     "answers": {
-      "answer_a": "a student record with the name James Lenon will be added into the students table",
-      "answer_b": "the above query will generate an error message.",
+      "answer_a": "True",
+      "answer_b": "False",
       "answer_c": null,
       "answer_d": null,
       "answer_e": null,
@@ -125,49 +285,17 @@
       }
     ],
     "category": "SQL",
-    "difficulty": "Easy"
-  },
-  {
-    "id": 80,
-    "question": "How do you create an array in PHP?",
-    "description": null,
-    "answers": {
-      "answer_a": "$cars = \"Volvo\", \"BMW\", \"Toyota\";",
-      "answer_b": "$cars = newarray(\"Volvo\", \"BMW\", \"Toyota\");",
-      "answer_c": "$cars = array[\"Volvo\", \"BMW\", \"Toyota\"];",
-      "answer_d": "$cars = array(\"Volvo\", \"BMW\", \"Toyota\");",
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "true",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_d",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "PHP"
-      }
-    ],
-    "category": "",
     "difficulty": "Medium"
   },
   {
-    "id": 395,
-    "question": "The main MySQL program that does all the data handling is called",
+    "id": 622,
+    "question": "How can we determine the number of rows returned in the result set of a MySQL query?",
     "description": null,
     "answers": {
-      "answer_a": "Mysql",
-      "answer_b": "Mysqld",
-      "answer_c": "Httpd",
-      "answer_d": "Mysql.exe",
+      "answer_a": "The function mysqli_get_rows() returns the number of rows in a result set.",
+      "answer_b": "The function mysqli_num_rows() returns the number of rows in a result set.",
+      "answer_c": "The function mysqli_count_rows() returns the number of rows in a result set.",
+      "answer_d": null,
       "answer_e": null,
       "answer_f": null
     },
@@ -185,138 +313,10 @@
     "tip": null,
     "tags": [
       {
-        "name": "MySQL"
-      }
-    ],
-    "category": "SQL",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 1052,
-    "question": "What does 'become: yes' mean in Ansible playbooks?",
-    "description": null,
-    "answers": {
-      "answer_a": "It means that the command must be retried until it succeeds",
-      "answer_b": "It means that the service needs to be started once installed",
-      "answer_c": "It means that the worker node should become a manager node",
-      "answer_d": "It means that we would run all commands as root",
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "true",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "DevOps"
-      }
-    ],
-    "category": "DevOps",
-    "difficulty": "Easy"
-  },
-  {
-    "id": 550,
-    "question": "Which sign is used to access a variable of  a variable in PHP?",
-    "description": null,
-    "answers": {
-      "answer_a": "$$",
-      "answer_b": "$|",
-      "answer_c": "#@",
-      "answer_d": "$",
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
         "name": "PHP"
       }
     ],
     "category": "Code",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 158,
-    "question": "Which input type defines a slider control?",
-    "description": null,
-    "answers": {
-      "answer_a": "slider",
-      "answer_b": "search",
-      "answer_c": "range",
-      "answer_d": "controls",
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "false",
-      "answer_c_correct": "true",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_c",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "HTML"
-      }
-    ],
-    "category": "",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 261,
-    "question": "What should one use for plugin development — custom post types or custom database tables?",
-    "description": null,
-    "answers": {
-      "answer_a": "custom post type",
-      "answer_b": "custom database tables",
-      "answer_c": "There is no specific preference for plugin development; it depends on what type of plugin’s one has to develop.",
-      "answer_d": null,
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "false",
-      "answer_c_correct": "true",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "WordPress"
-      }
-    ],
-    "category": "CMS",
-    "difficulty": "Hard"
+    "difficulty": "Easy"
   }
 ]

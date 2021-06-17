@@ -6,8 +6,10 @@
 <% end %>
 
 <%= @questions[0]['qid']%>
+
 <h1><%= session[:marks]%></h1>
 <h1><%= session[:times]%></h1>
+<h1><%= session[:max]%></h1>
 
 
 <h1><%=@questions[session[:times]]['question']%></h1>

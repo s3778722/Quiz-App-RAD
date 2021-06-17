@@ -5,8 +5,16 @@
     </div>
 </div>
 <br>
+<%= form_with url: "/set", method: :post do |form| %>
 <div class="row">
     <div class="col text-center">
-      <a class="btn btn-primary" href="/quiz" role="button">Start</a>
+        <input type="number" name="max" min="4" max="8" value ="4">
     </div>
 </div>
+<br>
+<div class="row">
+    <div class="col text-center">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</div>
+<%end %>
