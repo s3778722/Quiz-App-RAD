@@ -1,22 +1,22 @@
 [
   {
-    "id": 1003,
-    "question": "Which of the following is a valid Kubernetes configuration? Select those answers that apply.",
+    "id": 968,
+    "question": "Which description best fits a DaemonSet?",
     "description": null,
     "answers": {
-      "answer_a": "All-in-One Kubernetes Installation",
-      "answer_b": "Single Master (with etcd) and Multi-Worker Nodes",
-      "answer_c": "External etcd Cluster, Single Master and Multi-Worker Nodes",
-      "answer_d": "External etcd Cluster, Multi-Master and Multi-Worker Nodes",
-      "answer_e": "Kubernetes Swarm",
+      "answer_a": "A way to run a copy of a pod on all or some nodes",
+      "answer_b": "A method to manage clusters of pods",
+      "answer_c": "A channel through which to pass information between two or more nodes",
+      "answer_d": "A system to connect nodes and pods",
+      "answer_e": null,
       "answer_f": null
     },
-    "multiple_correct_answers": "true",
+    "multiple_correct_answers": "false",
     "correct_answers": {
       "answer_a_correct": "true",
-      "answer_b_correct": "true",
-      "answer_c_correct": "true",
-      "answer_d_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
       "answer_e_correct": "false",
       "answer_f_correct": "false"
     },
@@ -28,306 +28,18 @@
         "name": "Kubernetes"
       }
     ],
-    "category": "Docker",
+    "category": "DevOps",
     "difficulty": "Hard"
   },
   {
-    "id": 967,
-    "question": "What is the mission of the control plane in Kubernetes?",
+    "id": 896,
+    "question": "As soon a service starts, ________ daemon running on each node add a set of environment variables on the pod for each active service.",
     "description": null,
     "answers": {
-      "answer_a": "To manage clusters of pods",
-      "answer_b": "It makes sure that the actual state of system objects match the desired state.",
-      "answer_c": "To move workloads from one host to another",
-      "answer_d": "To control nodes",
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "true",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": null,
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "Kubernetes"
-      }
-    ],
-    "category": "Docker",
-    "difficulty": "Easy"
-  },
-  {
-    "id": 178,
-    "question": "Which command is used to build a Docker image?",
-    "description": null,
-    "answers": {
-      "answer_a": "docker built username/repository_name:1.0.1",
-      "answer_b": "docker image -t create username/repository_name:1.0.1",
-      "answer_c": "docker build -t username/repository_name:1.0.1",
-      "answer_d": "docker create username/repository_name:1.0.1",
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "false",
-      "answer_c_correct": "true",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "Docker"
-      }
-    ],
-    "category": "Docker",
-    "difficulty": "Easy"
-  },
-  {
-    "id": 891,
-    "question": "Is it possible to build environment-agnostic systems with Docker?",
-    "description": null,
-    "answers": {
-      "answer_a": "True",
-      "answer_b": "False",
-      "answer_c": null,
-      "answer_d": null,
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": null,
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "Docker"
-      }
-    ],
-    "category": "Docker",
-    "difficulty": "Easy"
-  },
-  {
-    "id": 174,
-    "question": "You can define and run multiple Docker containers using:",
-    "description": null,
-    "answers": {
-      "answer_a": "Docker Swarn",
-      "answer_b": "Docker Hub",
-      "answer_c": "Docker Hub",
-      "answer_d": "Docker Cloud",
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "true",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "Docker"
-      }
-    ],
-    "category": "Docker",
-    "difficulty": "Easy"
-  },
-  {
-    "id": 802,
-    "question": "How do you create a docker container from an image?",
-    "description": null,
-    "answers": {
-      "answer_a": "docker run -it -d <image_name>",
-      "answer_b": "docker --run -it -d <image_name>",
-      "answer_c": "docker run it d <image_name>",
-      "answer_d": null,
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "Docker"
-      }
-    ],
-    "category": "Docker",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 834,
-    "question": "Which of the following is a hosted service that provides a Registry with build and testing facilities for Dockerized application images, tools to help you set up and manage your host infrastructure.",
-    "description": null,
-    "answers": {
-      "answer_a": "Docker Cloud",
-      "answer_b": "Docker Compose",
-      "answer_c": "Docker Hub",
-      "answer_d": "Docker Universal Control Plane",
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "Docker"
-      }
-    ],
-    "category": "Docker",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 814,
-    "question": "How to remove unused data (all unused containers, networks, images (both dangling and unreferenced), and optionally, volumes) in Docker.,",
-    "description": null,
-    "answers": {
-      "answer_a": "docker system --prune",
-      "answer_b": "docker system prune sys",
-      "answer_c": "docker system prune",
-      "answer_d": null,
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "false",
-      "answer_c_correct": "true",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "Docker"
-      }
-    ],
-    "category": "Docker",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 838,
-    "question": "Docker host's IP address by default is 192.168.99.100",
-    "description": null,
-    "answers": {
-      "answer_a": "True",
-      "answer_b": "False",
-      "answer_c": null,
-      "answer_d": null,
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": null,
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "Docker"
-      }
-    ],
-    "category": "Docker",
-    "difficulty": "Easy"
-  },
-  {
-    "id": 849,
-    "question": "How to remove the docker container with container id mentioned in the command.",
-    "description": null,
-    "answers": {
-      "answer_a": "$ docker rm -rf 9b6343d3b5a0",
-      "answer_b": "$ docker -rm rf 9b6343d3b5a0",
-      "answer_c": "$ docker rm 9b6343d3b5a0",
-      "answer_d": null,
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "false",
-      "answer_c_correct": "true",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "Docker"
-      }
-    ],
-    "category": "Docker",
-    "difficulty": "Easy"
-  },
-  {
-    "id": 1007,
-    "question": "On which of the following systems can minikube be installed on? Select one.",
-    "description": null,
-    "answers": {
-      "answer_a": "Linux",
-      "answer_b": "Windows",
-      "answer_c": "macOS",
-      "answer_d": "All of the mentioned",
+      "answer_a": "Kubectl",
+      "answer_b": "Service discovery",
+      "answer_c": "Kubeadm",
+      "answer_d": "Kubelet",
       "answer_e": null,
       "answer_f": null
     },
@@ -348,184 +60,24 @@
         "name": "Kubernetes"
       }
     ],
-    "category": "Docker",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 821,
-    "question": "How many containers can run per host?",
-    "description": null,
-    "answers": {
-      "answer_a": "There can be as many containers as you wish per host. Docker does not put any restrictions on it.",
-      "answer_b": "There can be only 4 containers",
-      "answer_c": "There can be only 3containers",
-      "answer_d": null,
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": null,
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "Docker"
-      }
-    ],
-    "category": "Docker",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 800,
-    "question": "If you vaguely remember the command and you’d like to confirm it, how will you get help on that particular command?",
-    "description": null,
-    "answers": {
-      "answer_a": "docker help",
-      "answer_b": "docker --help",
-      "answer_c": "docker -help",
-      "answer_d": null,
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "true",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "Docker"
-      }
-    ],
-    "category": "Docker",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 852,
-    "question": "How to stop a container with container id mentioned in the command?",
-    "description": null,
-    "answers": {
-      "answer_a": "$ docker ter 109cb6nw",
-      "answer_b": "$ docker stop -ls 109cb6nw",
-      "answer_c": "$ docker stop 109cb6nw",
-      "answer_d": null,
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "false",
-      "answer_c_correct": "true",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": null,
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "Docker"
-      }
-    ],
-    "category": "Docker",
+    "category": "DevOps",
     "difficulty": "Easy"
   },
   {
-    "id": 819,
-    "question": "Can a Docker container restart by itself?",
+    "id": 933,
+    "question": "What is a load balancer in Kubernetes?",
     "description": null,
     "answers": {
-      "answer_a": "True",
-      "answer_b": "False",
-      "answer_c": null,
+      "answer_a": "load balancer is a method for seperating service",
+      "answer_b": "load balancer is a method for exposing service",
+      "answer_c": "load balancer is a method for partitioning service",
       "answer_d": null,
       "answer_e": null,
       "answer_f": null
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": null,
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "Docker"
-      }
-    ],
-    "category": "Docker",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 173,
-    "question": "Where can you  find and share Docker container images?",
-    "description": null,
-    "answers": {
-      "answer_a": "Docker Swarm",
-      "answer_b": "Docker Cloud",
-      "answer_c": "Docker Hub",
-      "answer_d": "Docker Git",
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
       "answer_a_correct": "false",
-      "answer_b_correct": "false",
-      "answer_c_correct": "true",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "Docker"
-      }
-    ],
-    "category": "Docker",
-    "difficulty": "Easy"
-  },
-  {
-    "id": 971,
-    "question": "Which of the following are true for etcd?",
-    "description": null,
-    "answers": {
-      "answer_a": "etcd is the primary datastore of Kubernetes; storing and replicating all Kubernetes cluster state",
-      "answer_b": "etcd is a distributed key-value store",
-      "answer_c": "To encrypt cluster data and send it to a secrets manager",
-      "answer_d": "To validate cluster nodes",
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "true",
-    "correct_answers": {
-      "answer_a_correct": "true",
       "answer_b_correct": "true",
       "answer_c_correct": "false",
       "answer_d_correct": "false",
@@ -540,18 +92,114 @@
         "name": "Kubernetes"
       }
     ],
-    "category": "Docker",
+    "category": "DevOps",
     "difficulty": "Easy"
   },
   {
-    "id": 872,
-    "question": "Which is not true about Docker Hub?",
+    "id": 1055,
+    "question": "Which command would you use to get the hostname of a remote host with Ansible",
     "description": null,
     "answers": {
-      "answer_a": "Docker Hub is the world's largest library and community for container images",
-      "answer_b": "Docker Hub provides an easy way to create, manage, and deliver your teams' container applications",
-      "answer_c": "Docker Hub is a totally private repository",
+      "answer_a": "ansible your_server -m setup -a field=*hostname*",
+      "answer_b": "ansible your_server -m env -a filter=*hostname*",
+      "answer_c": "ansible your_server -m setup -a filter=*hostname*",
       "answer_d": null,
+      "answer_e": "ansible your_server -m setup -a get=*hostname*",
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "DevOps"
+      }
+    ],
+    "category": "DevOps",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 910,
+    "question": "What used to be called a minion in Kubernetes cluster?",
+    "description": null,
+    "answers": {
+      "answer_a": "A component of the master node.",
+      "answer_b": "A monitoring engine used widely in Kubernetes.",
+      "answer_c": "Docker container service.",
+      "answer_d": "A worker node.",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "true",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Kubernetes"
+      }
+    ],
+    "category": "DevOps",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 939,
+    "question": "What is kubectl drain used for?",
+    "description": null,
+    "answers": {
+      "answer_a": "To safely evict all of your pods from a node before performing maintenance on the node",
+      "answer_b": "To stop all running containers in a pod",
+      "answer_c": "To get the status of a specific node during maintenance",
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Kubernetes"
+      }
+    ],
+    "category": "DevOps",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 899,
+    "question": "Kubernetes uses _____________ to connect to ouath 2 providers to offload the authentication to external services.",
+    "description": null,
+    "answers": {
+      "answer_a": "Webhook Token Authentication",
+      "answer_b": "Keystone Password",
+      "answer_c": "OpenID Connect Tokens",
+      "answer_d": "Authentication Proxy",
       "answer_e": null,
       "answer_f": null
     },
@@ -569,15 +217,600 @@
     "tip": null,
     "tags": [
       {
-        "name": "Docker"
+        "name": "Kubernetes"
       }
     ],
-    "category": "Docker",
+    "category": "DevOps",
     "difficulty": "Easy"
   },
   {
-    "id": 808,
-    "question": "You use a container, edit it, and update it",
+    "id": 960,
+    "question": "What is a cluster?",
+    "description": null,
+    "answers": {
+      "answer_a": "A system made up of multiple servers and other resources",
+      "answer_b": "A computer program or device that provides services to other computers",
+      "answer_c": "A specific set of ordered operations",
+      "answer_d": "A software package that performs a specific function for an end user",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Kubernetes"
+      }
+    ],
+    "category": "DevOps",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 972,
+    "question": "What is a Kubernetes volume?",
+    "description": null,
+    "answers": {
+      "answer_a": "The software within an OS that controls capacity allocation for nodes",
+      "answer_b": "A directory for the data accessible to containers in a pod",
+      "answer_c": "Layering software that puts apps into compartments for easier deployment",
+      "answer_d": "Code that enables two software programs to communicate",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Kubernetes"
+      }
+    ],
+    "category": "DevOps",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 923,
+    "question": "What is ETCD?",
+    "description": null,
+    "answers": {
+      "answer_a": "Etcd is written in Go programming language and is a distributed key-value store used for coordinating between distributed work.",
+      "answer_b": "Etcd is written in Python programming language and is a distributed key-value store used for coordinating between distributed work.",
+      "answer_c": "Etcd is written in C++ programming language and is a distributed key-value store used for coordinating between distributed work.",
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Kubernetes"
+      }
+    ],
+    "category": "DevOps",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 823,
+    "question": "BASH stands for:",
+    "description": null,
+    "answers": {
+      "answer_a": "Bourne Again SHell",
+      "answer_b": "BAsic SHell",
+      "answer_c": "Basic Async SHell",
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "BASH"
+      }
+    ],
+    "category": "Linux",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 726,
+    "question": "How to list a particular Kubernetes deployment?",
+    "description": null,
+    "answers": {
+      "answer_a": "kubectl info deployment my-dep",
+      "answer_b": "kubectl get deployment my-dep",
+      "answer_c": "kubectl describe deployment my-dep",
+      "answer_d": "kubectl ls deployment my-dep",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Kubernetes"
+      }
+    ],
+    "category": "Linux",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 703,
+    "question": "How can you list only the directories in your current directory using ls command?",
+    "description": null,
+    "answers": {
+      "answer_a": "ls -l|grep “^d”",
+      "answer_b": "ls -ld",
+      "answer_c": "ls --dir",
+      "answer_d": "ls -d",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "BASH"
+      },
+      {
+        "name": "Linux"
+      }
+    ],
+    "category": "Linux",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 31,
+    "question": "What command is used to count the total number of lines, words, and characters contained in a file?",
+    "description": null,
+    "answers": {
+      "answer_a": "count p",
+      "answer_b": "wc",
+      "answer_c": "wcount",
+      "answer_d": "countw",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_b",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Linux"
+      }
+    ],
+    "category": "Linux",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 685,
+    "question": "What is UMASK?",
+    "description": null,
+    "answers": {
+      "answer_a": "UMASK is a Unix environment variable, which automatically sets file permissions created files.",
+      "answer_b": "UMASK is a Unix environment variable, which automatically sets the file visibility.",
+      "answer_c": "UMASK is a Unix environment variable, which not really used anymore and is considered legacy.",
+      "answer_d": "UMASK is a Unix environment variable, which is replaced by the chmod command now however it's still largely used.",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "BASH"
+      },
+      {
+        "name": "Linux"
+      }
+    ],
+    "category": "Linux",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 714,
+    "question": "What could be used to program additional authentication logic besides available authenticator modules?",
+    "description": null,
+    "answers": {
+      "answer_a": "Kube Vault",
+      "answer_b": "Authentication Proxy",
+      "answer_c": "Kube Auth Service",
+      "answer_d": "Kubernetes Role Manager",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": "Using Authentication Proxy, the API server can extract the information it needs about the user’s identity using the HTTP headers that you specify. Let’s have a quick example to demonstrate this concept:",
+    "tip": null,
+    "tags": [
+      {
+        "name": "Kubernetes"
+      }
+    ],
+    "category": "Linux",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 14,
+    "question": "What command is used to clear up the command prompt window?",
+    "description": null,
+    "answers": {
+      "answer_a": "clearit",
+      "answer_b": "clrwin",
+      "answer_c": "clear",
+      "answer_d": "clrscr",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_c",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Linux"
+      }
+    ],
+    "category": "Linux",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 1073,
+    "question": "What is the default priority of the swap partition",
+    "description": null,
+    "answers": {
+      "answer_a": "0",
+      "answer_b": "-1",
+      "answer_c": "10",
+      "answer_d": "1",
+      "answer_e": "There are no priorities for swap",
+      "answer_f": "100"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Linux"
+      }
+    ],
+    "category": "Linux",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 710,
+    "question": "Distinguish between cmp and diff commands?",
+    "description": null,
+    "answers": {
+      "answer_a": "‘diff’ shows all the differences from two file whereas ‘cmp’ shows the only the first occurring difference. The said is applicable only if differences between the files do exist.",
+      "answer_b": "‘cmp’ shows all the differences from two file whereas ‘diff’ shows the only the first occurring difference. The said is applicable only if differences between the files do exist.",
+      "answer_c": "‘diff’ shows the last difference from two file whereas ‘cmp’ shows the only the first occurring difference. The said is applicable only if differences between the files do exist.",
+      "answer_d": "‘cmp’ shows the last difference from two file whereas ‘diff’ shows the only the first occurring difference. The said is applicable only if differences between the files do exist.",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "BASH"
+      },
+      {
+        "name": "Linux"
+      }
+    ],
+    "category": "Linux",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 578,
+    "question": "How do we access the value of 'd' later? $a = array(     'a',     3 => 'b',     1 => 'c',     'd' );",
+    "description": null,
+    "answers": {
+      "answer_a": "$a[0]",
+      "answer_b": "$a[3]",
+      "answer_c": "$a[2]",
+      "answer_d": "$a[1]",
+      "answer_e": "$a[4]",
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "true",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "PHP"
+      }
+    ],
+    "category": "Linux",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 331,
+    "question": "What is the best advantage of InnoDB over MyISAM?",
+    "description": null,
+    "answers": {
+      "answer_a": "InnoDB is thread safe",
+      "answer_b": "InnoDB provides a transaction safe environment",
+      "answer_c": "InnoDB can handle table with more than 1000 columns",
+      "answer_d": "InnoDB provides FULLTEXT indexes",
+      "answer_e": "None of the above",
+      "answer_f": "All of the above"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "MySQL"
+      }
+    ],
+    "category": "SQL",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 228,
+    "question": "The SQL WHERE clause?",
+    "description": null,
+    "answers": {
+      "answer_a": "Limits the column data that are returned",
+      "answer_b": "Limits the row data are returned",
+      "answer_c": "Both A and B are correct",
+      "answer_d": "Neither A nor B are correct",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "MySQL"
+      }
+    ],
+    "category": "SQL",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 240,
+    "question": "Please select Spatial data types:",
+    "description": null,
+    "answers": {
+      "answer_a": "GEOMETRY",
+      "answer_b": "CIRCLE",
+      "answer_c": "SQUARE",
+      "answer_d": "POINT",
+      "answer_e": "POLYGON",
+      "answer_f": null
+    },
+    "multiple_correct_answers": "true",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "true",
+      "answer_e_correct": "true",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "MySQL"
+      }
+    ],
+    "category": "SQL",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 356,
+    "question": "The WHERE clause is mandatory when using the SELECT command",
+    "description": null,
+    "answers": {
+      "answer_a": "True",
+      "answer_b": "False",
+      "answer_c": null,
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "MySQL"
+      }
+    ],
+    "category": "SQL",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 398,
+    "question": "MySQL runs on which Operating Systems?",
+    "description": null,
+    "answers": {
+      "answer_a": "Unix And Linux Only",
+      "answer_b": "Windows only",
+      "answer_c": "Linux And Mac OS-X Only",
+      "answer_d": "Unix, Linux, Windows,Mac And Others",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "true",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "MySQL"
+      }
+    ],
+    "category": "SQL",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 371,
+    "question": "Null is used as a place holder for optional fields",
     "description": null,
     "answers": {
       "answer_a": "True",
@@ -601,21 +834,53 @@
     "tip": null,
     "tags": [
       {
-        "name": "Docker"
+        "name": "MySQL"
       }
     ],
-    "category": "Docker",
-    "difficulty": "Medium"
+    "category": "SQL",
+    "difficulty": "Easy"
   },
   {
-    "id": 863,
-    "question": "How to update the container's configurations which shows all the update options.",
+    "id": 412,
+    "question": "Which command is used to remove all rows from a table?",
     "description": null,
     "answers": {
-      "answer_a": "$ docker update -help",
-      "answer_b": "$ docker update help",
-      "answer_c": "$ docker update --help",
-      "answer_d": null,
+      "answer_a": "Delete",
+      "answer_b": "Both Delete and Remove",
+      "answer_c": "Truncate",
+      "answer_d": "Remove",
+      "answer_e": "Drop",
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "MySQL"
+      }
+    ],
+    "category": "SQL",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 211,
+    "question": "You have to sort records in the descending order by field \"rating\". Which query will be correct?",
+    "description": null,
+    "answers": {
+      "answer_a": "SORT BY \"rating\" DESC",
+      "answer_b": "SORT BY \"rating\"",
+      "answer_c": "ORDER BY \"rating\" DESC",
+      "answer_d": "ORDER BY \"rating\"",
       "answer_e": null,
       "answer_f": null
     },
@@ -633,10 +898,74 @@
     "tip": null,
     "tags": [
       {
-        "name": "Docker"
+        "name": "MySQL"
       }
     ],
-    "category": "Docker",
+    "category": "SQL",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 374,
+    "question": "What will be the effect of inserting 500 rows in a table with the following definition. CREATE TABLE `categories` ( `category_id` tinyint(3) AUTO_INCREMENT, `category_name` varchar(150) DEFAULT NULL, `remarks` varchar(500) DEFAULT NULL, PRIMARY KEY",
+    "description": null,
+    "answers": {
+      "answer_a": "500 rows will be inserted into the table",
+      "answer_b": "only 100 rows will be inserted",
+      "answer_c": "a table with the above definition is not possible",
+      "answer_d": "half the records will be inserted then an error will be generated",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "true",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "MySQL"
+      }
+    ],
+    "category": "SQL",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 248,
+    "question": "Which of the following will raise MySQL's version of an error?",
+    "description": null,
+    "answers": {
+      "answer_a": "SIGNAL",
+      "answer_b": "RAISE",
+      "answer_c": "ERROR",
+      "answer_d": "None of these",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "MySQL"
+      }
+    ],
+    "category": "SQL",
     "difficulty": "Medium"
   }
 ]
