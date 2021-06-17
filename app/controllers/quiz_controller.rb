@@ -47,8 +47,8 @@ class QuizController < ApplicationController
     if session[:history].count >= 6 
       session[:history].shift()
     end
-      session[:history] << "At #{d.strftime("%H:%M")}, #{d.strftime("%d/%m/%Y")}, you answered #{session[:marks]}/#{session[:max]} questions correctly"
-    end
+    session[:history] << "At #{d.strftime("%H:%M")}, #{d.strftime("%d/%m/%Y")}, you answered #{session[:marks]}/#{session[:max]} questions correctly"
+
   end  
 
   def reload
