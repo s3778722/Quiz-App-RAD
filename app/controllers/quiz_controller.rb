@@ -2,6 +2,7 @@ class QuizController < ApplicationController
   def start
     Rails.application.load_seed
     @questions = QuizItem.all
+    
     if params.include?(:flexRadioDefault)
       @answers = params[:flexRadioDefault]
       if  @answers == 'answer_a_correct'
@@ -52,31 +53,92 @@ class QuizController < ApplicationController
   end  
 
   def reload
-    if session[:combination] == 1
-      url = 'https://quizapi.io/api/v1/questions?apiKey=A9ya16s39eH0hdu3BgxigMuxVa4zbjMaVjHxCOyt&limit=20&category=docker'
+    categories = Array.new
+    count = 0
+    if session[:docker] == true
+      count += 1
+      categories << "docker"
+    end
+ 
+    if session[:devops] == true
+      count += 1
+      categories << "devops"
+    end
+
+    if session[:linux] == true
+      count += 1
+      categories << "linux"
+    end
+
+    if session[:sql] == true
+      count += 1 
+      categories << "sql"
+    end
+
+
+    if count == 1
+      url = "https://quizapi.io/api/v1/questions?apiKey=A9ya16s39eH0hdu3BgxigMuxVa4zbjMaVjHxCOyt&limit=10&category=#{categories[0]}"
       uri = URI(url)
       response = Net::HTTP.get(uri)
       result = JSON.parse(response)
+      result.shuffle!
       File.write('./quiz.json', JSON.pretty_generate(result))
-    elsif session['combination'] == 2
-      url = 'https://quizapi.io/api/v1/questions?apiKey=A9ya16s39eH0hdu3BgxigMuxVa4zbjMaVjHxCOyt&limit=20&category=devops'
+    elsif count == 2
+      url = "https://quizapi.io/api/v1/questions?apiKey=A9ya16s39eH0hdu3BgxigMuxVa4zbjMaVjHxCOyt&limit=10&category=#{categories[0]}"
+      url2 = "https://quizapi.io/api/v1/questions?apiKey=A9ya16s39eH0hdu3BgxigMuxVa4zbjMaVjHxCOyt&limit=10&category=#{categories[1]}"
       uri = URI(url)
       response = Net::HTTP.get(uri)
+      uri2 = URI(url2)
+      response2 = Net::HTTP.get(uri2)
       result = JSON.parse(response)
+      result2 = JSON.parse(response2)
+      result.concat(result2)
+      result.shuffle!
       File.write('./quiz.json', JSON.pretty_generate(result))
-    elsif session['combination'] == 3
-      url = 'https://quizapi.io/api/v1/questions?apiKey=A9ya16s39eH0hdu3BgxigMuxVa4zbjMaVjHxCOyt&limit=20&category=linux'
+    elsif count == 3
+      url = "https://quizapi.io/api/v1/questions?apiKey=A9ya16s39eH0hdu3BgxigMuxVa4zbjMaVjHxCOyt&limit=10&category=#{categories[0]}"
+      url2 = "https://quizapi.io/api/v1/questions?apiKey=A9ya16s39eH0hdu3BgxigMuxVa4zbjMaVjHxCOyt&limit=10&category=#{categories[1]}"
+      url3 = "https://quizapi.io/api/v1/questions?apiKey=A9ya16s39eH0hdu3BgxigMuxVa4zbjMaVjHxCOyt&limit=10&category=#{categories[2]}"
       uri = URI(url)
+      uri2 = URI(url2)
+      uri3 = URI(url3)
       response = Net::HTTP.get(uri)
+      response2 = Net::HTTP.get(uri2)
+      response3 = Net::HTTP.get(uri3)
       result = JSON.parse(response)
+      result2 = JSON.parse(response2)
+      result3 = JSON.parse(response3)
+      result.concat(result2)
+      result.concat(result3)
+      result.shuffle!
       File.write('./quiz.json', JSON.pretty_generate(result))
-    elsif session['combination'] == 4
-      url = 'https://quizapi.io/api/v1/questions?apiKey=A9ya16s39eH0hdu3BgxigMuxVa4zbjMaVjHxCOyt&limit=20&category=sql'
+    elsif count == 4
+      url = "https://quizapi.io/api/v1/questions?apiKey=A9ya16s39eH0hdu3BgxigMuxVa4zbjMaVjHxCOyt&limit=10&category=#{categories[0]}"
+      url2 = "https://quizapi.io/api/v1/questions?apiKey=A9ya16s39eH0hdu3BgxigMuxVa4zbjMaVjHxCOyt&limit=10&category=#{categories[1]}"
+      url3 = "https://quizapi.io/api/v1/questions?apiKey=A9ya16s39eH0hdu3BgxigMuxVa4zbjMaVjHxCOyt&limit=10&category=#{categories[2]}"
+      url4 = "https://quizapi.io/api/v1/questions?apiKey=A9ya16s39eH0hdu3BgxigMuxVa4zbjMaVjHxCOyt&limit=10&category=#{categories[3]}"
       uri = URI(url)
+      uri2 = URI(url2)
+      uri3 = URI(url3)
+      uri4 = URI(url4)
       response = Net::HTTP.get(uri)
+      response2 = Net::HTTP.get(uri2)
+      response3 = Net::HTTP.get(uri3)
+      response4 = Net::HTTP.get(uri4)
       result = JSON.parse(response)
+      result2 = JSON.parse(response2)
+      result3 = JSON.parse(response3)
+      result4 = JSON.parse(response4)
+      result.concat(result2)
+      result.concat(result3)
+      result.concat(result4)
+      result.shuffle!
       File.write('./quiz.json', JSON.pretty_generate(result))
     end
+    redirect_to(quiz_get_path)
+  end
+
+  def redo
     redirect_to(quiz_get_path)
   end
 end

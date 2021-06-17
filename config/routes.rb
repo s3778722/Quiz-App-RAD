@@ -10,6 +10,7 @@ Rails.application.routes.draw do
 
   get 'quiz/result', to: 'quiz#result', as: 'result'
   get 'quiz/reload', to: 'quiz#reload', as: 'quiz_reload'
+  get 'quiz/redo', to: 'quiz#redo', as: 'quiz_redo'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
