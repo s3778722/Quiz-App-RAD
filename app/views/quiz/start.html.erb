@@ -1,0 +1,75 @@
+<% flash.each do |type, msg| %>
+  <br>
+  <div class="alert alert-primary" role="alert">
+    <%= msg %>
+  </div>
+<% end %>
+
+<%= @questions[0]['qid']%>
+<h1><%= session[:marks]%></h1>
+<h1><%= session[:times]%></h1>
+
+
+<h1><%=@questions[session[:times]]['question']%></h1>
+<h1><% a = @questions[session[:times]]['answers']%></h1>
+
+<%= form_with url: "/quiz", method: :post do |form| %>
+
+<%if @questions[session[:times]]['answers']['answer_a'] %>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="answer_a_correct">
+  <label class="form-check-label" for="flexRadioDefault1">
+    <%=@questions[session[:times]]['answers']['answer_a']%>
+  </label>
+</div>
+<% end %>
+
+<%if @questions[session[:times]]['answers']['answer_b'] %>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="answer_b_correct">
+  <label class="form-check-label" for="flexRadioDefault2">
+    <%=@questions[session[:times]]['answers']['answer_b']%>
+  </label>
+</div>
+<% end %>
+
+
+<%if @questions[session[:times]]['answers']['answer_c'] %>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" value="answer_c_correct">
+  <label class="form-check-label" for="flexRadioDefault3">
+    <%=@questions[session[:times]]['answers']['answer_c']%>
+  </label>
+</div>
+<% end %>
+
+<%if @questions[session[:times]]['answers']['answer_d'] %>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" value="answer_d_correct">
+  <label class="form-check-label" for="flexRadioDefault4">
+    <%=@questions[session[:times]]['answers']['answer_d']%>
+  </label>
+</div>
+<% end %>
+
+<%if @questions[session[:times]]['answers']['answer_e'] %>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5" value="answer_e_correct">
+  <label class="form-check-label" for="flexRadioDefault5">
+    <%=@questions[session[:times]]['answers']['answer_e']%>
+  </label>
+</div>
+<% end %>
+
+<%if @questions[session[:times]]['answers']['answer_f'] %>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6" value="answer_f_correct">
+  <label class="form-check-label" for="flexRadioDefault6">
+    <%=@questions[session[:times]]['answers']['answer_f']%>
+  </label>
+</div>
+<% end %>
+
+  <br>
+  <button type="submit" class="btn btn-primary">Submit</button>
+<% end %>
