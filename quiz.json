@@ -1,5 +1,389 @@
 [
   {
+    "id": 1003,
+    "question": "Which of the following is a valid Kubernetes configuration? Select those answers that apply.",
+    "description": null,
+    "answers": {
+      "answer_a": "All-in-One Kubernetes Installation",
+      "answer_b": "Single Master (with etcd) and Multi-Worker Nodes",
+      "answer_c": "External etcd Cluster, Single Master and Multi-Worker Nodes",
+      "answer_d": "External etcd Cluster, Multi-Master and Multi-Worker Nodes",
+      "answer_e": "Kubernetes Swarm",
+      "answer_f": null
+    },
+    "multiple_correct_answers": "true",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "true",
+      "answer_c_correct": "true",
+      "answer_d_correct": "true",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Kubernetes"
+      }
+    ],
+    "category": "Docker",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 967,
+    "question": "What is the mission of the control plane in Kubernetes?",
+    "description": null,
+    "answers": {
+      "answer_a": "To manage clusters of pods",
+      "answer_b": "It makes sure that the actual state of system objects match the desired state.",
+      "answer_c": "To move workloads from one host to another",
+      "answer_d": "To control nodes",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Kubernetes"
+      }
+    ],
+    "category": "Docker",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 178,
+    "question": "Which command is used to build a Docker image?",
+    "description": null,
+    "answers": {
+      "answer_a": "docker built username/repository_name:1.0.1",
+      "answer_b": "docker image -t create username/repository_name:1.0.1",
+      "answer_c": "docker build -t username/repository_name:1.0.1",
+      "answer_d": "docker create username/repository_name:1.0.1",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Docker"
+      }
+    ],
+    "category": "Docker",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 891,
+    "question": "Is it possible to build environment-agnostic systems with Docker?",
+    "description": null,
+    "answers": {
+      "answer_a": "True",
+      "answer_b": "False",
+      "answer_c": null,
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Docker"
+      }
+    ],
+    "category": "Docker",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 174,
+    "question": "You can define and run multiple Docker containers using:",
+    "description": null,
+    "answers": {
+      "answer_a": "Docker Swarn",
+      "answer_b": "Docker Hub",
+      "answer_c": "Docker Hub",
+      "answer_d": "Docker Cloud",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Docker"
+      }
+    ],
+    "category": "Docker",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 802,
+    "question": "How do you create a docker container from an image?",
+    "description": null,
+    "answers": {
+      "answer_a": "docker run -it -d <image_name>",
+      "answer_b": "docker --run -it -d <image_name>",
+      "answer_c": "docker run it d <image_name>",
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Docker"
+      }
+    ],
+    "category": "Docker",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 834,
+    "question": "Which of the following is a hosted service that provides a Registry with build and testing facilities for Dockerized application images, tools to help you set up and manage your host infrastructure.",
+    "description": null,
+    "answers": {
+      "answer_a": "Docker Cloud",
+      "answer_b": "Docker Compose",
+      "answer_c": "Docker Hub",
+      "answer_d": "Docker Universal Control Plane",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Docker"
+      }
+    ],
+    "category": "Docker",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 814,
+    "question": "How to remove unused data (all unused containers, networks, images (both dangling and unreferenced), and optionally, volumes) in Docker.,",
+    "description": null,
+    "answers": {
+      "answer_a": "docker system --prune",
+      "answer_b": "docker system prune sys",
+      "answer_c": "docker system prune",
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Docker"
+      }
+    ],
+    "category": "Docker",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 838,
+    "question": "Docker host's IP address by default is 192.168.99.100",
+    "description": null,
+    "answers": {
+      "answer_a": "True",
+      "answer_b": "False",
+      "answer_c": null,
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Docker"
+      }
+    ],
+    "category": "Docker",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 849,
+    "question": "How to remove the docker container with container id mentioned in the command.",
+    "description": null,
+    "answers": {
+      "answer_a": "$ docker rm -rf 9b6343d3b5a0",
+      "answer_b": "$ docker -rm rf 9b6343d3b5a0",
+      "answer_c": "$ docker rm 9b6343d3b5a0",
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Docker"
+      }
+    ],
+    "category": "Docker",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 1007,
+    "question": "On which of the following systems can minikube be installed on? Select one.",
+    "description": null,
+    "answers": {
+      "answer_a": "Linux",
+      "answer_b": "Windows",
+      "answer_c": "macOS",
+      "answer_d": "All of the mentioned",
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "true",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Kubernetes"
+      }
+    ],
+    "category": "Docker",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 821,
+    "question": "How many containers can run per host?",
+    "description": null,
+    "answers": {
+      "answer_a": "There can be as many containers as you wish per host. Docker does not put any restrictions on it.",
+      "answer_b": "There can be only 4 containers",
+      "answer_c": "There can be only 3containers",
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": null,
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Docker"
+      }
+    ],
+    "category": "Docker",
+    "difficulty": "Medium"
+  },
+  {
     "id": 800,
     "question": "If you vaguely remember the command and you’d like to confirm it, how will you get help on that particular command?",
     "description": null,
@@ -32,13 +416,13 @@
     "difficulty": "Medium"
   },
   {
-    "id": 809,
-    "question": "How do you create a new Docker image and store it on the local system?",
+    "id": 852,
+    "question": "How to stop a container with container id mentioned in the command?",
     "description": null,
     "answers": {
-      "answer_a": "docker commit <conatainer_id> <username/imagename>",
-      "answer_b": "docker --commit <conatainer id> <username/imagename>",
-      "answer_c": "docker commit <conatainer id> <username/imagename>",
+      "answer_a": "$ docker ter 109cb6nw",
+      "answer_b": "$ docker stop -ls 109cb6nw",
+      "answer_c": "$ docker stop 109cb6nw",
       "answer_d": null,
       "answer_e": null,
       "answer_f": null
@@ -52,7 +436,7 @@
       "answer_e_correct": "false",
       "answer_f_correct": "false"
     },
-    "correct_answer": "answer_a",
+    "correct_answer": null,
     "explanation": null,
     "tip": null,
     "tags": [
@@ -64,40 +448,8 @@
     "difficulty": "Easy"
   },
   {
-    "id": 931,
-    "question": "Which flag is used to specify the path to the configuration file in kube-proxy?",
-    "description": null,
-    "answers": {
-      "answer_a": "–cluster-cidr string",
-      "answer_b": "–config string",
-      "answer_c": "–detect-local-mode LocalMode",
-      "answer_d": null,
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "true",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": null,
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "Kubernetes"
-      }
-    ],
-    "category": "Docker",
-    "difficulty": "Hard"
-  },
-  {
-    "id": 816,
-    "question": "Can I use JSON instead of YAML for my compose file in Docker?",
+    "id": 819,
+    "question": "Can a Docker container restart by itself?",
     "description": null,
     "answers": {
       "answer_a": "True",
@@ -128,150 +480,22 @@
     "difficulty": "Medium"
   },
   {
-    "id": 839,
-    "question": "Following Docker command: eval $(docker-machine env default)  is used to:",
+    "id": 173,
+    "question": "Where can you  find and share Docker container images?",
     "description": null,
     "answers": {
-      "answer_a": "Activate default VM machine",
-      "answer_b": "Build an image",
-      "answer_c": "Access a running container",
-      "answer_d": "Commit changes done in a Docker image",
+      "answer_a": "Docker Swarm",
+      "answer_b": "Docker Cloud",
+      "answer_c": "Docker Hub",
+      "answer_d": "Docker Git",
       "answer_e": null,
       "answer_f": null
     },
     "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "Docker"
-      }
-    ],
-    "category": "Docker",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 877,
-    "question": "Why wouldn't you see Docker in Plesk installer's list of components?",
-    "description": null,
-    "answers": {
-      "answer_a": "The server does not satisfy Docker system requirements",
-      "answer_b": "Docker is available as an extension and you can only install it from the extensions catalog",
-      "answer_c": "Your Plesk license doesn't have a Docker add-on",
-      "answer_d": null,
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": null,
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "Docker"
-      }
-    ],
-    "category": "Docker",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 884,
-    "question": "Docker image is created with a series of read-only layers and layer in docker represents instructions on the Dockerfile of the image.",
-    "description": null,
-    "answers": {
-      "answer_a": "The hypervisor needs extensive hardware for proper function while docker is implemented on an actual operating system.",
-      "answer_b": "The hypervisor needs extensive software for proper function while docker is implemented on an actual hardware system.",
-      "answer_c": null,
-      "answer_d": null,
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "Docker"
-      }
-    ],
-    "category": "Docker",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 876,
-    "question": "Choose the system requirements you need to run Docker on a Plesk Onyx Server:",
-    "description": null,
-    "answers": {
-      "answer_a": "20GB of free disk space",
-      "answer_b": "At least 2GB of RAM",
-      "answer_c": "A compatible Linux OS",
-      "answer_d": "A 64-bit CPU",
-      "answer_e": "One physical server",
-      "answer_f": null
-    },
-    "multiple_correct_answers": "true",
     "correct_answers": {
       "answer_a_correct": "false",
       "answer_b_correct": "false",
       "answer_c_correct": "true",
-      "answer_d_correct": "true",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": null,
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "Docker"
-      }
-    ],
-    "category": "Docker",
-    "difficulty": "Hard"
-  },
-  {
-    "id": 177,
-    "question": "Which command is used to access a running container?",
-    "description": null,
-    "answers": {
-      "answer_a": "docker exec -it container_id bash",
-      "answer_b": "docker fetch container",
-      "answer_c": "docker run container_id bash",
-      "answer_d": "docker login container_id",
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
       "answer_d_correct": "false",
       "answer_e_correct": "false",
       "answer_f_correct": "false"
@@ -288,20 +512,20 @@
     "difficulty": "Easy"
   },
   {
-    "id": 921,
-    "question": "Which of the following is true for Kube-proxy?",
+    "id": 971,
+    "question": "Which of the following are true for etcd?",
     "description": null,
     "answers": {
-      "answer_a": "Kube-proxy is a network proxy that runs only on the master node",
-      "answer_b": "Kube-proxy can run on each and every node and can do simple TCP/UDP packet forwarding across backend network service.",
-      "answer_c": null,
-      "answer_d": null,
+      "answer_a": "etcd is the primary datastore of Kubernetes; storing and replicating all Kubernetes cluster state",
+      "answer_b": "etcd is a distributed key-value store",
+      "answer_c": "To encrypt cluster data and send it to a secrets manager",
+      "answer_d": "To validate cluster nodes",
       "answer_e": null,
       "answer_f": null
     },
-    "multiple_correct_answers": "false",
+    "multiple_correct_answers": "true",
     "correct_answers": {
-      "answer_a_correct": "false",
+      "answer_a_correct": "true",
       "answer_b_correct": "true",
       "answer_c_correct": "false",
       "answer_d_correct": "false",
@@ -317,295 +541,7 @@
       }
     ],
     "category": "Docker",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 1023,
-    "question": "What does the FROM instruction do in a Dockerfile?",
-    "description": null,
-    "answers": {
-      "answer_a": "FROM creates a layer from a base Docker image.",
-      "answer_b": "FROM specifies the creator of the image",
-      "answer_c": "FROM is an invalid instruction",
-      "answer_d": "FROM adds files from your Docker client’s current directory",
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "Docker"
-      }
-    ],
-    "category": "Docker",
     "difficulty": "Easy"
-  },
-  {
-    "id": 845,
-    "question": "How to list all the docker images pulled on the system with image details such as TAG/IMAGE ID/SIZE etc.",
-    "description": null,
-    "answers": {
-      "answer_a": "$ docker img",
-      "answer_b": "$ docker --images",
-      "answer_c": "$ docker images",
-      "answer_d": null,
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "false",
-      "answer_c_correct": "true",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "Docker"
-      }
-    ],
-    "category": "Docker",
-    "difficulty": "Easy"
-  },
-  {
-    "id": 172,
-    "question": "Docker containers can run on:",
-    "description": null,
-    "answers": {
-      "answer_a": "Only Linux distributions",
-      "answer_b": "Linux distributions and Windows systems",
-      "answer_c": "Only Windows systems",
-      "answer_d": null,
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "true",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": "Docker containers are based on open standard allowing containers to run on all major Linux distributions and Microsoft operating systems",
-    "tip": null,
-    "tags": [
-      {
-        "name": "Docker"
-      }
-    ],
-    "category": "Docker",
-    "difficulty": "Easy"
-  },
-  {
-    "id": 854,
-    "question": "How to save a new docker image with container id mentioned in the command on the local system.",
-    "description": null,
-    "answers": {
-      "answer_a": "$ docker save 109ca6efc quizapi/httpd_image",
-      "answer_b": "$ docker --save 109ca6efc quizapi/httpd_image",
-      "answer_c": "$ docker commit 109ca6efc quizapi/httpd_image",
-      "answer_d": null,
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "false",
-      "answer_c_correct": "true",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": null,
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "Docker"
-      }
-    ],
-    "category": "Docker",
-    "difficulty": "Easy"
-  },
-  {
-    "id": 1030,
-    "question": "How to list all nodes in your Docker swarm?",
-    "description": null,
-    "answers": {
-      "answer_a": "docker node get",
-      "answer_b": "docker node print",
-      "answer_c": "docker node get-all",
-      "answer_d": "docker node ls",
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "true",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "Docker"
-      }
-    ],
-    "category": "Docker",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 815,
-    "question": "You lose your data, when a docker container exists",
-    "description": null,
-    "answers": {
-      "answer_a": "True",
-      "answer_b": "False",
-      "answer_c": null,
-      "answer_d": null,
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "true",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "Docker"
-      }
-    ],
-    "category": "Docker",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 812,
-    "question": "How to delete an image from the local storage system?",
-    "description": null,
-    "answers": {
-      "answer_a": "$ docker rmi <image-id>",
-      "answer_b": "$ docker --rmi <image-id>",
-      "answer_c": "$ docker rmin <imageid>",
-      "answer_d": null,
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "Docker"
-      }
-    ],
-    "category": "Docker",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 999,
-    "question": "Which of the following are features of Kubernetes?",
-    "description": null,
-    "answers": {
-      "answer_a": "Self-healing",
-      "answer_b": "Kubernetes Swarm",
-      "answer_c": "Secrets and configuration management",
-      "answer_d": "Batch execution",
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "true",
-    "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
-      "answer_c_correct": "true",
-      "answer_d_correct": "true",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": null,
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "Kubernetes"
-      }
-    ],
-    "category": "Docker",
-    "difficulty": "Medium"
-  },
-  {
-    "id": 885,
-    "question": "Is there a hard limit for the number of containers that you can run and if there is which is number of total containers that you can run?",
-    "description": null,
-    "answers": {
-      "answer_a": "Even though there is no limit of containers that can run on Docker, hardware limitations come into the picture.",
-      "answer_b": "5",
-      "answer_c": "2",
-      "answer_d": null,
-      "answer_e": null,
-      "answer_f": null
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": null,
-    "tip": null,
-    "tags": [
-      {
-        "name": "Docker"
-      }
-    ],
-    "category": "Docker",
-    "difficulty": "Medium"
   },
   {
     "id": 872,
@@ -638,5 +574,69 @@
     ],
     "category": "Docker",
     "difficulty": "Easy"
+  },
+  {
+    "id": 808,
+    "question": "You use a container, edit it, and update it",
+    "description": null,
+    "answers": {
+      "answer_a": "True",
+      "answer_b": "False",
+      "answer_c": null,
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Docker"
+      }
+    ],
+    "category": "Docker",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 863,
+    "question": "How to update the container's configurations which shows all the update options.",
+    "description": null,
+    "answers": {
+      "answer_a": "$ docker update -help",
+      "answer_b": "$ docker update help",
+      "answer_c": "$ docker update --help",
+      "answer_d": null,
+      "answer_e": null,
+      "answer_f": null
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false",
+      "answer_e_correct": "false",
+      "answer_f_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": null,
+    "tip": null,
+    "tags": [
+      {
+        "name": "Docker"
+      }
+    ],
+    "category": "Docker",
+    "difficulty": "Medium"
   }
 ]

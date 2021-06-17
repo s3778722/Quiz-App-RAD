@@ -41,7 +41,7 @@ class QuizController < ApplicationController
   def result
     d = DateTime.now.in_time_zone('Melbourne')
     if session[:history].nil? 
-      ession[:history] ||= [] 
+      session[:history] ||= [] 
     end
     #need one more space for the latest result
     if session[:history].count >= 6 
