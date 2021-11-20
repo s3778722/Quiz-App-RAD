@@ -1,24 +1,5 @@
 # README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Quiz App  - Rapid Application Development (2021) 
+* Created a full-stack quiz application for users to answer technical quizzes. Fetch response from a Quiz API
+* Ability to generate random quizzes, view results, history, quiz settings, remember settings, categorical quizzes, difficulty level, multiple answers, and redo functionality.
+* Stack involved: Ruby on Rails, HTML, CSS
